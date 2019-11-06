@@ -1,0 +1,47 @@
+@import "fonts.css";
+
+body {
+    background: #282828;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: #fbfbfb;
+    padding-top: 30px;
+}
+
+.menu-bar {
+    padding: 40px 0;
+    color: #1f1f24;
+}
+    .menu__item {
+        margin-left: 2.2em;
+    }
+    .menu__item a {
+        font-family: 'Roboto Regular', serif;
+        font-size: 1em;
+        color: #1f1f24;
+    }
+    .menu__item a:hover {
+        text-decoration: underline;
+        color: #fc557c;
+    }
+    .menu__text {
+        font-family: 'Roboto Bold', serif;
+        font-size: 1.6em;
+        color: #1f1f24;
+    }
+    .menu__button {
+        font-family: 'Roboto Regular', serif;
+        font-size: 1em;
+        color: #f53f4f;
+        border: none;
+        outline: 1px solid #f82370;
+        padding: 18px 40px 16px;
+        background: none;
+    }
