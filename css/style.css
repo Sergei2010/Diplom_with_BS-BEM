@@ -1,7 +1,8 @@
 @import "fonts.css";
 
 body {
-    background: #282828;
+    background: #fbfbfb;
+    padding-top: 30px;
 }
 
 ul, li {
@@ -11,12 +12,10 @@ ul, li {
 }
 
 .container {
-    background: #fbfbfb;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .menu-bar {
-    padding: 40px 0;
     color: #1f1f24;
 }
     .menu__item {
@@ -36,12 +35,87 @@ ul, li {
         font-size: 1.6em;
         color: #1f1f24;
     }
-    .menu__button {
-        font-family: 'Roboto Regular', serif;
-        font-size: 1em;
-        color: #f53f4f;
-        border: none;
-        outline: 1px solid #f82370;
-        padding: 18px 40px 16px;
-        background: none;
+/* шапка*/
+.header {
+    margin-top: 40px;
+}
+    .header__title {
+        font-family: 'Roboto Bold', serif;
+        font-size: 5em;
+        color: #1f1f24;
     }
+    .header__text {
+        font-family: 'Roboto Regular', serif;
+        font-size: 1.6em;
+        color: #8993ad;
+        margin-top: 44px;
+    }
+    .header__img {
+        height: 629px;
+    }
+
+.button {
+    font-family: 'Roboto Regular', serif;
+    transition: 0.3s;
+}
+.button_full {
+    font-size: 1.1em;
+    color: #ffffff;
+    border: none;
+    outline: 1px solid #f82370;
+    padding: 27px 72px 24px;
+    background: #ff4e2e;
+    margin-top: 70px;
+}
+.button_empty {
+    font-size: 1em;
+    color: #f53f4f;
+    border: none;
+    outline: 1px solid #f82370;
+    padding: 18px 40px 16px;
+    background: none;
+}
+.button_full:hover,
+.button_empty:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* о нас */
+.about {
+    background: #ffffff;
+    text-align: center;
+}
+    .about_title {
+        font-family: 'Roboto Bold', serif;
+        font-size: 3.3em;
+        color: #262626;
+    }
+    .about__text {
+        font-family: 'Roboto Regular', serif;
+        font-size: 1.3em;
+        color: #8993ad;
+    }
+    .about__img {
+        padding-bottom: 15px;
+    }
+    .about__text {
+        padding: 15px 0;
+    }
+
+@media (min-width: 1201px) AND (max-width: 1900px) {
+   /* шапка*/
+    .header {
+        background: url("../img/svg/braces.svg") no-repeat 0 0,
+                    url("../img/svg/div-back.svg") no-repeat 45% 10%,
+                    url("../img/svg/sharp.svg") no-repeat 0 60%,
+                    url("../img/svg/div.svg") no-repeat 50% 90%,
+                    url("../img/svg/copy-back.svg") no-repeat 10% 102%;
+
+        background-size: 12%, 12%, 12%, 12%, 12%;
+        animation: animatedBackground 4s ease 1;
+    }
+    @keyframes animatedBackground {
+        0% {background-position: 0 0, 45% 10%, 0 60%, 50% 90%, 10% 102%;}
+        50% {background-position: 10% 20%, 65% 25%, 10% 45%, 65% 45%, 30% 65%;}
+    }
+}
