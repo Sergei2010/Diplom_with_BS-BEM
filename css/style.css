@@ -1,121 +1,811 @@
 @import "fonts.css";
-
+/* рассчитываем высоту с учетом того, что мы не меняем, применяемую по умолчанию CSS модель */
+html, body {
+    height: calc(100% - 8px);
+}
 body {
     background: #fbfbfb;
+    font-size: 100%;
+    margin: 0 auto;
     padding-top: 30px;
+    overflow-x: hidden;
+    max-width: 1420px;
+    min-width: 320px;
 }
-
 ul, li {
     display: block;
     padding: 0;
     margin: 0;
 }
 
-.container {
-    padding-top: 60px;
+/* размеры шрифтов */
+.text__h1 {
+     font-size: 5em;
+     margin-bottom: 44px;
+ }
+ .text__h2 {
+     font-size: 3.3em;
+ }
+ .text__h3 {
+     font-size: 2.8em;
+ }
+ .text__h4 {
+     font-size: 1.6em;
+ }
+ .text__h5 {
+     font-size: 1.2em;
+ }
+ .text__h6 {
+     font-size: 1.15em;
+ }
+
+/* шрифты */
+.text__h1, .text__h2, .text__h3, .text__h4_bold {
+    font-family: "Roboto Bold", serif;
+}
+.text__h4_reg-grey, .text__h4_reg-black, .text__h5, .text__h6 {
+    font-family: "Roboto Regular", serif;
+}
+.text__h1 {
+    color: #1f1f24;
+}
+.text__h2 {
+    color: #262626;
+}
+.text__h3 {
+    color: #ffffff;
+}
+.text__h4_bold {
+    color: #1f1f24;
+}
+.text__h4_reg-grey {
+    color: #8993ad;
+}
+.text__h4_reg-black {
+    color: #000000;
+}
+.text__h5 {
+    color: #8993ad;
+}
+.text__h6-white {
+    color:#ffffff;
+}
+.text__h6-grey {
+    color: #8993ad;
+}
+.text__h6-black {
+    color: #1f1f24;
+}
+.text__h6-red {
+    color: #fc557c;
 }
 
+    /* menu-bar */
 .menu-bar {
     color: #1f1f24;
 }
     .menu__item {
         margin-left: 2.2em;
     }
-    .menu__item a {
-        font-family: 'Roboto Regular', serif;
-        font-size: 1em;
-        color: #1f1f24;
-    }
     .menu__item a:hover {
         text-decoration: underline;
         color: #fc557c;
     }
-    .menu__text {
-        font-family: 'Roboto Bold', serif;
-        font-size: 1.6em;
-        color: #1f1f24;
-    }
-/* шапка*/
-.header {
-    margin-top: 40px;
-}
-    .header__title {
-        font-family: 'Roboto Bold', serif;
-        font-size: 5em;
-        color: #1f1f24;
-    }
-    .header__text {
-        font-family: 'Roboto Regular', serif;
-        font-size: 1.6em;
-        color: #8993ad;
-        margin-top: 44px;
-    }
-    .header__img {
-        height: 629px;
-    }
 
+/* css для гамбургера */
+    .menu-bar__button,
+    .menu-bar__phone {
+        border: none;
+        background: none;
+    }
+        .menu-bar__svg_menu:hover path,
+        .menu-bar__svg_menu:focus path,
+        .menu-bar__svg_menu:active path {
+            fill: #f82370;
+        }
+        .menu-bar__list {
+            padding: 20px 25px 20px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            background: #f8eeee;
+            display: inline-flex;
+        }
+        .menu-bar__list:hover {
+            transform: rotate(-1deg);
+            transition: 0.3s;
+            transform-origin: 0 0;
+        }
+
+    /* header */
+.header {
+    height: 645px;
+    margin-top: 40px;
+    background: url("../img/header-bg.png") no-repeat left calc(550px + 15%*2) top 0;
+    background-size: auto 100%;
+    /*object-fit: cover;*/
+    }
+    .header__container {
+        padding-top: 130px;
+        background: url("../img/svg/braces.svg") no-repeat 0 0,
+        url("../img/svg/div-back.svg") no-repeat 50% 10%,
+        url("../img/svg/sharp.svg") no-repeat -1% 60%,
+        url("../img/svg/div.svg") no-repeat 30% 95%,
+        url("../img/svg/copy-back.svg") no-repeat 40% 60%;
+        background-size: 12%, 12%, 12%, 12%, 12%;
+        animation: animeBgOne 20s ease infinite;
+        -moz-animation: animeBgOne 20s ease infinite;
+        -webkit-animation: animeBgOne 20s ease infinite;
+        -o-animation: animeBgOne 20s ease infinite;
+    }
+        @keyframes animeBgOne {
+            50% {
+                background-position: 10% 15%, 30% 12%, 20% 55%, 25% 85%, 30% 55%;
+            }
+        }
+
+    /* buttons */
 .button {
-    font-family: 'Roboto Regular', serif;
     transition: 0.3s;
 }
-.button_full {
-    font-size: 1.1em;
-    color: #ffffff;
-    border: none;
-    outline: 1px solid #f82370;
-    padding: 27px 72px 24px;
-    background: #ff4e2e;
-    margin-top: 70px;
-}
-.button_empty {
-    font-size: 1em;
-    color: #f53f4f;
-    border: none;
-    outline: 1px solid #f82370;
-    padding: 18px 40px 16px;
-    background: none;
-}
-.button_full:hover,
-.button_empty:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+    .button_full {
+        padding-top: 27px;
+        padding-bottom: 24px;
+        margin-top: 70px;
+        border: none;
+        background: #ff4e2e;
+        width: 270px;
+        text-wrap: none;
+    }
+    .button_empty {
+        padding: 18px 40px 16px;
+        border: 1px solid #f82370;
+        background: none;
+    }
+    .menu-bar__phone {
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border-radius: 50%;
+    }
+    .button_full:hover,
+    .button_empty:hover,
+    .menu-bar__button:hover,
+    .menu-bar__phone:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
 
 /* о нас */
 .about {
     background: #ffffff;
     text-align: center;
+    padding: 100px 0;
 }
-    .about_title {
-        font-family: 'Roboto Bold', serif;
-        font-size: 3.3em;
-        color: #262626;
-    }
-    .about__text {
-        font-family: 'Roboto Regular', serif;
-        font-size: 1.3em;
-        color: #8993ad;
-    }
     .about__img {
-        padding-bottom: 15px;
-    }
-    .about__text {
         padding: 15px 0;
     }
-
-@media (min-width: 1201px) AND (max-width: 1900px) {
-   /* шапка*/
-    .header {
-        background: url("../img/svg/braces.svg") no-repeat 0 0,
-                    url("../img/svg/div-back.svg") no-repeat 45% 10%,
-                    url("../img/svg/sharp.svg") no-repeat 0 60%,
-                    url("../img/svg/div.svg") no-repeat 50% 90%,
-                    url("../img/svg/copy-back.svg") no-repeat 10% 102%;
-
-        background-size: 12%, 12%, 12%, 12%, 12%;
-        animation: animatedBackground 4s ease 1;
+    .about__row_items {
+        padding-top: 100px;
     }
-    @keyframes animatedBackground {
-        0% {background-position: 0 0, 45% 10%, 0 60%, 50% 90%, 10% 102%;}
-        50% {background-position: 10% 20%, 65% 25%, 10% 45%, 65% 45%, 30% 65%;}
+    .info__item_social {
+        width: 270px;
+    }
+    .about__link {
+        padding: 15px 0;
+    }
+    .about__link:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background: #f8eeee;
+    }
+        .about__link:hover:nth-child(odd) {
+            transform: rotate(-1deg);
+            transition: 0.3s;
+            transform-origin: 0 0;
+        }
+        .about__link:hover:nth-child(even) {
+            transform: rotate(1deg);
+            transition: 0.3s;
+            transform-origin: 0 0;
+        }
+        .about__link:hover .about__img {
+            transform: scale(1.1);
+        }
+        .about__link:hover .about__text {
+         color: #788097;
+        }
+        .about__link:hover a {
+            text-decoration: none;
+        }
+
+/* Примеры моих работ */
+.examples {
+    text-align: center;
+    padding-bottom: 100px;
+    background: #fbfbfb;
+}
+    .examples__slider {
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+    .examples__img {
+        padding-bottom: 40px;
+    }
+    .examples__button {
+        padding-top: 50px;
+    }
+    .slick-dots {
+        bottom: -45px;
+    }
+        .slick-dots li button:before {
+            font-size: 10px;
+        }
+                .slick-dots li button:before {
+                    opacity: .1;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+                    color: red;
+                }
+                .slick-dots li.slick-active button:before {
+                    opacity: .75;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+                    color: #de4f33;
+                }
+                .arrows {
+                    background: transparent;
+                    position: relative;
+                }
+                .arrows:active {
+                    outline: none;
+                }
+        #next {
+            position: absolute;
+            top: -22.3rem;
+            right: -5.2rem;
+        }
+        #prev {
+            position: absolute;
+            top: -22.3rem;
+            left: -5.2rem;
+        }
+
+    /* поговорим о ценах */
+.price {
+    margin-top: 100px;
+    padding: 80px 0;
+    background: -webkit-linear-gradient(13deg, #e58d5e, #dc3292);
+    background: linear-gradient(77deg, #e58d5e, #dc3292);
+
+}
+    .price__text {
+        padding-top: 30px;
+    }
+    .price__container {
+        padding-top: 0;
+        background: url("../img/svg/braces-white.svg") no-repeat 0 98%,
+        url("../img/svg/sharp-white.svg") no-repeat 40% 95%,
+        url("../img/svg/copy-back-white.svg") no-repeat 55% 101%,
+        url("../img/svg/div-white.svg") no-repeat 80% 85%,
+        url("../img/svg/braces-back-white.svg") no-repeat 90% 90%;
+        background-size: 11%, 10%, 11%, 10%, 10%;
+        animation: animeBgTwo 20s ease infinite;
+        -moz-animation: animeBgTwo 20s ease infinite;
+        -webkit-animation: animeBgTwo 20s ease infinite;
+        -o-animation: animeBgTwo 20s ease infinite;
+    }
+    @keyframes animeBgTwo {
+        50% {
+            background-position: 5% 96%, 25% 90%, 60% 95%, 75% 80%, 100% 85%;
+        }
+    }
+
+    /* info */
+.info {
+    padding: 80px 0;
+}
+    .info__contacts_icon {
+        padding-right: 20px;
+        color: #e35fb1;
+    }
+    .info__item .button_empty {
+        margin: 0 auto;
+    }
+    .info__item_social {
+        padding-top: 30px;
+    }
+    .info__item_social svg {
+        width: 30px;
+        height: 30px;
+        fill: #b2b7c8;
+    }
+        .info__item_social svg:hover {
+            fill: #e35fb1;
+        }
+    .info__section a:hover {
+        color: #e35fb1;
+    }
+
+.footer {
+    background: #252525;
+    padding: 35px 0;
+}
+
+@media (min-width: 768px) AND (max-width: 1200px) {
+
+    /* размеры шрифтов */
+    .text__h1,
+    .text__h2 {
+        font-size: 3.38em;
+    }
+    .text__h3 {
+        font-size: 2.8em;
+    }
+    .text__h4 {
+        font-size: 1.56em;
+    }
+    .text__h5,
+    .text__h6 {
+        font-size: 1.13em;
+    }
+    .menu-bar__div-empty {
+        height: 68px;
+    }
+    .button_full {
+        padding: 27px 80px 24px;
+        margin-top: 50px;
+        width: 320px;
+    }
+    .button_empty {
+        padding: 18px 60px 16px;
+    }
+    .about {
+        padding: 100px 0;
+    }
+    .examples {
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+    .slick-dots li button:before {
+        font-size: 18px;
+    }
+    .price {
+        margin-top: 0;
+    }
+    .price__text {
+        padding-top: 50px;
+    }
+    .info {
+        padding: 80px 0;
+    }
+    .info__contacts_icon {
+        padding-right: 20px;
+    }
+    .info__item_social {
+        width: 270px;
+    }
+        .info__item_social svg {
+            width: 30px;
+            height: 25px;
+        }
+
+    /*  фон шапки */
+    .header {
+        height: 630px;
+        margin-top: 0;
+        background: url("../img/header-bg.png") no-repeat left calc(400px + 20%*2) top 0;
+        background-size: auto 100%;
+    }
+
+    .header__container {
+        padding-top: 130px;
+        background: url("../img/svg/braces.svg") no-repeat 0 0,
+        url("../img/svg/div-back.svg") no-repeat 45% 3%,
+        url("../img/svg/sharp.svg") no-repeat 10% 50%,
+        url("../img/svg/div.svg") no-repeat 0 98%,
+        url("../img/svg/copy-back.svg") no-repeat 30% 48%;
+        background-size: 22%, 22%, 22%, 22%, 22%;
+        animation: animeBgOne 20s ease infinite;
+        -moz-animation: animeBgOne 20s ease infinite;
+        -webkit-animation: animeBgOne 20s ease infinite;
+        -o-animation: animeBgOne 20s ease infinite;
+    }
+
+        @keyframes animeBgOne {
+            50% {
+                background-position: 20% 5%, 35% 5%, 0 50%, 15% 99%, 15% 50%;
+            }
+        }
+    .price__container {
+        padding-top: 0;
+        background: url("../img/svg/braces-white.svg") no-repeat 0 80%,
+        url("../img/svg/sharp-white.svg") no-repeat 25% 85%,
+        url("../img/svg/copy-back-white.svg") no-repeat 45% 82%,
+        url("../img/svg/div-white.svg") no-repeat 75% 80%,
+        url("../img/svg/braces-back-white.svg") no-repeat 100% 70%;
+        background-size: 20%, 20%, 20%, 18%, 20%;
+        animation: animeBgTwo 20s ease infinite;
+        -moz-animation: animeBgTwo 20s ease infinite;
+        -webkit-animation: animeBgTwo 20s ease infinite;
+        -o-animation: animeBgTwo 20s ease infinite;
+    }
+    @keyframes animeBgTwo {
+        50% {
+            background-position: 10% 82%, 20% 82%, 50% 85%, 85% 85%, 95% 72%;
+        }
+    }
+}
+
+@media (min-width: 768px) AND (max-width: 992px) {
+
+    .header {
+        background-position: calc(250px + 25%*2);
+    }
+        .header__container button {
+            padding: 27px 40px 24px;
+            width: auto;
+        }
+
+}
+
+@media (min-width: 577px) AND (max-width: 767px) {
+
+    .text__h1,
+    .text__h2 {
+        font-size: 2em;
+    }
+    .text__h3 {
+        font-size: 1.17em;
+    }
+    .text__h4 {
+       font-size: 1em;
+    }
+    .text__h5 {
+        font-size: 0.83em;
+    }
+    .text__h6 {
+        font-size: 0.67em;
+    }
+
+    .menu__item {
+        margin-left: 1em;
+    }
+    .menu-bar__svg_menu  {
+        width: 36px;
+        height: 30px;
+    }
+    .menu-bar__svg_phone  {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* header-mob */
+    .header-mob {
+        margin-top: 20px;
+        background: url("../img/svg/braces.svg") no-repeat 0 0,
+        url("../img/svg/copy-back.svg") no-repeat 55% -1%,
+        url("../img/svg/sharp.svg") no-repeat 5% 30%,
+        url("../img/svg/div.svg") no-repeat 90% 0;
+        background-size: 22%, 22%, 22%, 22%, 22%;
+        animation: animeBgOne 20s ease infinite;
+        -moz-animation: animeBgOne 20s ease infinite;
+        -webkit-animation: animeBgOne 20s ease infinite;
+        -o-animation: animeBgOne 20s ease infinite;
+    }
+        @keyframes animeBgOne {
+            50% {
+                background-position: 20% 1%, 45% -3%, 10% 25%, 90% 5%;
+            }
+        }
+        .header-mob__img {
+            height: 420px;
+            overflow: hidden;
+        }
+        .header-mob__img img {
+            height: auto;
+            width: 100%;
+        }
+        .header__text {
+            text-align: center;
+            height: 180px;
+        }
+        .header__text .text__h1 {
+            padding: 9px 0;
+            margin: 0;
+        }
+        .header__text .button_full {
+            margin-top: 30px;
+        }
+    .button_full {
+        padding-top: 22px;
+        padding-bottom: 20px;
+        width: 270px;
+    }
+    .about {
+        padding-top: 39px;
+        padding-bottom: 0;
+    }
+        .about__link {
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+            .about__link .text__h5 {
+                padding: 20px 20px 10px;
+                margin-bottom: 0;
+            }
+        .about__row_items {
+            padding: 0;
+        }
+        .about__img {
+            margin: 0;
+            padding: 0;
+            width: 60px;
+            height: 60px;
+        }
+        .about .button_full {
+            margin-top: 10px;
+        }
+    .examples {
+        padding-top: 42px;
+        padding-bottom: 0;
+    }
+        .examples__slider {
+            padding: 24px 0;
+        }
+        .examples__img {
+            padding-bottom: 0;
+        }
+        .slick-dots {
+            bottom: -45px;
+        }
+        .slick-dots li button:before {
+            font-size: 12px;
+        }
+        .examples__button {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .examples__button button {
+            margin-top: 50px;
+        }
+    .price {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+        .price__container {
+            background: url("../img/svg/braces-white.svg") no-repeat 0 77%,
+            url("../img/svg/sharp-white.svg") no-repeat 25% 82%,
+            url("../img/svg/copy-back-white.svg") no-repeat 45% 79%,
+            url("../img/svg/div-white.svg") no-repeat 75% 77%,
+            url("../img/svg/braces-back-white.svg") no-repeat 100% 67%;
+            background-size: 16%, 16%, 16%, 12%, 16%;
+            animation: animeBgTwo 20s ease infinite;
+            -moz-animation: animeBgTwo 20s ease infinite;
+            -webkit-animation: animeBgTwo 20s ease infinite;
+            -o-animation: animeBgTwo 20s ease infinite;
+        }
+            @keyframes animeBgTwo {
+                50% {
+                    background-position: 10% 79%, 20% 79%, 50% 82%, 85% 68%, 95% 69%;
+                }
+            }
+    .info {
+        padding: 50px 0;
+    }
+        .info__contacts_icon {
+            padding-right: 20px;
+        }
+        .info__item_social {
+            padding-top: 30px;
+        }
+        .info__item .button_full {
+            margin-top: 30px;
+        }
+        .info__item_social {
+            padding-top: 50px;
+            width: 320px;
+        }
+        .info__item_social svg {
+            width: 30px;
+            height: 25px;
+        }
+    .footer {
+        padding: 17px 0;
+    }
+}
+
+@media (min-width: 320px) AND (max-width: 576px) {
+
+    .text__h1,
+    .text__h2,
+    .text__h3 {
+        font-size: 1em;
+    }
+    .text__h4 {
+        font-size: 0.9em;
+    }
+    .text__h5,
+    .text__h6 {
+        font-size: 0.7em;
+    }
+
+    .menu-bar__svg_menu  {
+        width: 24px;
+        height: 18px;
+    }
+    .menu-bar__svg_phone  {
+        width: 26px;
+        height: 26px;
+    }
+    .menu-bar__div-empty {
+        height: 64px;
+    }
+
+    /* header-mob */
+    .header-mob {
+        margin-top: -30px;
+        background: url("../img/svg/braces.svg") no-repeat 0 0,
+        url("../img/svg/copy-back.svg") no-repeat 55% 1%,
+        url("../img/svg/sharp.svg") no-repeat 0 15%,
+        url("../img/svg/div.svg") no-repeat 90% 0;
+        background-size: 22%, 22%, 22%, 22%, 22%;
+        animation: animeBgOne 20s ease infinite;
+        -moz-animation: animeBgOne 20s ease infinite;
+        -webkit-animation: animeBgOne 20s ease infinite;
+        -o-animation: animeBgOne 20s ease infinite;
+    }
+        @keyframes animeBgOne {
+            50% {
+                background-position: 20% 1%, 45% 0, 0 25%, 95% 0;
+            }
+        }
+        .header-mob__img {
+            height: 329px;
+            overflow: hidden;
+            margin-left: -15px;
+            margin-right: -15px
+        }
+        .header-mob__img img {
+            height: auto;
+            width: 100%;
+        }
+        .header__text {
+            text-align: center;
+            height: 180px;
+        }
+        .header__text-small {
+            width: 220px;
+            margin: 0 auto;
+        }
+        .header__text .text__h1 {
+            padding: 21px 0;
+            margin: 0;
+        }
+        .header__text .button_full {
+            margin-top: 30px;
+        }
+        .button_full {
+            padding-top: 22px;
+            padding-bottom: 20px;
+            width: 270px;
+            margin-top: 0;
+            text-wrap: none;
+        }
+    .about {
+        padding-top: 41px;
+        padding-bottom: 0;
+    }
+        .about .text__h2 {
+            margin-bottom: 6px;
+        }
+        .about__link {
+            margin-top: 20px;
+            padding-top: 20px;
+            width: 220px;
+        }
+        .about__link .text__h5 {
+            padding: 20px 20px 10px;
+            margin-bottom: 0;
+        }
+        .about__row_items {
+            padding: 0;
+        }
+        .about__img {
+            margin: 0;
+            padding: 0;
+            width: 60px;
+            height: 60px;
+        }
+        .about .button_full {
+            margin-top: 40px;
+        }
+
+    .examples {
+        margin-top: 50px;
+        padding-top: 42px;
+        padding-bottom: 0;
+    }
+        .examples__slider {
+            padding: 10px 0;
+        }
+        .examples__img {
+            padding-bottom: 0;
+        }
+        .slick-dots {
+            bottom: -45px;
+        }
+        .slick-dots li button:before {
+            font-size: 12px;
+        }
+        .examples__button {
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .examples__button button {
+            margin-top: 50px;
+        }
+
+    .price {
+        margin-top: 50px;
+        padding: 50px 0;
+    }
+        .price__container {
+            background: url("../img/svg/braces-white.svg") no-repeat 0 63%,
+            url("../img/svg/sharp-white.svg") no-repeat 25% 68%,
+            url("../img/svg/copy-back-white.svg") no-repeat 45% 64%,
+            url("../img/svg/div-white.svg") no-repeat 75% 62%,
+            url("../img/svg/braces-back-white.svg") no-repeat 100% 62%;
+            background-size: 16%, 16%, 16%, 12%, 16%;
+            animation: animeBgTwo 20s ease infinite;
+            -moz-animation: animeBgTwo 20s ease infinite;
+            -webkit-animation: animeBgTwo 20s ease infinite;
+            -o-animation: animeBgTwo 20s ease infinite;
+        }
+        @keyframes animeBgTwo {
+            50% {
+                background-position: 10% 64%, 20% 64%, 50% 68%, 85% 61%, 95% 64%;
+            }
+        }
+
+    .info {
+        padding: 50px 0;
+    }
+        .info__section {
+            padding-left: 5px;
+        }
+        .info__item:first-child {
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+            .info__item:nth-child(2) .info__section:nth-child(1) {
+                margin: 7px 0 20px;
+            }
+        .info__btn {
+            margin-top: 30px;
+        }
+            .info__btn .button_full {
+                margin: 0 auto;
+            }
+        .info__contacts_icon {
+            padding-right: 20px;
+        }
+        .info__item_social {
+            padding: 50px 15px 0;
+            width: 270px;
+            margin: 0 auto;
+        }
+            .info__item_social svg:first-child {
+                width: 35px;
+                height: 19px;
+            }
+            .info__item_social svg:nth-child(2) {
+                width: 16px;
+                height: 28px;
+            }
+            .info__item_social svg:nth-child(3) {
+                width: 29px;
+                height: 24px;
+            }
+            .info__item_social svg:nth-child(4) {
+                width: 25px;
+                height: 25px;
+    }
+    .footer {
+        padding: 20px 0;
     }
 }
