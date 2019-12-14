@@ -1,7 +1,5 @@
 $(function () {
 
-
-
     $('.examples__slider').slick({
         autoplay: true,
         slidesToShow: 3,
