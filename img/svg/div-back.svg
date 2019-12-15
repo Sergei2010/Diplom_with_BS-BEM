@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="div-back.svg"
+   width="80"
+   height="40"
+   viewBox="0 0 21.166667 10.583333"
+   version="1.1"
+   id="svg36"
+   inkscape:version="1.0beta1 (76ce730, 2019-10-19)">
+  <defs
+     id="defs30">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient947">
+      <stop
+         style="stop-color:#ffaaaa;stop-opacity:1"
+         offset="0"
+         id="stop943" />
+      <stop
+         style="stop-color:#d40000;stop-opacity:1"
+         offset="1"
+         id="stop945" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(-3.8888912,2.2184989)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient947"
+       id="linearGradient949"
+       x1="6.0831022"
+       y1="10.799542"
+       x2="5.9869323"
+       y2="2.7914829"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.3942712"
+     inkscape:cx="5.9015275"
+     inkscape:cy="16.401791"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     fit-margin-left="10"
+     fit-margin-top="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:window-width="1403"
+     inkscape:window-height="878"
+     inkscape:window-x="37"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       position="3.9039343,10.930197"
+       orientation="0,48"
+       id="guide38" />
+    <sodipodi:guide
+       position="16.603934,10.930197"
+       orientation="48,0"
+       id="guide40" />
+    <sodipodi:guide
+       position="16.603934,-1.769803"
+       orientation="0,-48"
+       id="guide42" />
+    <sodipodi:guide
+       position="3.9039343,-1.769803"
+       orientation="-48,0"
+       id="guide44" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata33">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(3.9039343,-1.3500789)">
+    <text
+       transform="rotate(-42)"
+       xml:space="preserve"
+       style="font-weight:500;font-size:5.64444px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';fill:url(#linearGradient949);fill-opacity:1;stroke-width:0.264583"
+       x="-5.8515697"
+       y="10.771955"
+       id="text48"><tspan
+         sodipodi:role="line"
+         id="tspan46"
+         x="-5.8515697"
+         y="10.771955"
+         style="fill:url(#linearGradient949);fill-opacity:1;stroke-width:0.264583">&lt;div&gt;</tspan></text>
+  </g>
+  <inkscape:templateinfo>
+    <inkscape:name>svg-icon for diplom</inkscape:name>
+    <inkscape:date>2019-10-27</inkscape:date>
+  </inkscape:templateinfo>
+</svg>

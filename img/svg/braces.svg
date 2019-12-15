@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0beta1 (76ce730, 2019-10-19)"
+   id="svg36"
+   version="1.1"
+   viewBox="0 0 21.166667 10.583333"
+   height="40"
+   width="80"
+   sodipodi:docname="braces.svg">
+  <defs
+     id="defs30">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1050">
+      <stop
+         style="stop-color:#ff8080;stop-opacity:1"
+         offset="0"
+         id="stop1046" />
+      <stop
+         style="stop-color:#d40000;stop-opacity:1"
+         offset="1"
+         id="stop1048" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient947"
+       inkscape:collect="always">
+      <stop
+         id="stop943"
+         offset="0"
+         style="stop-color:#ffaaaa;stop-opacity:1" />
+      <stop
+         id="stop945"
+         offset="1"
+         style="stop-color:#d40000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="2.7914829"
+       x2="5.9869323"
+       y1="10.799542"
+       x1="6.0831022"
+       id="linearGradient949"
+       xlink:href="#linearGradient947"
+       inkscape:collect="always" />
+    <linearGradient
+       gradientTransform="translate(3.406707,-3.2018202)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient1050"
+       id="linearGradient1052"
+       x1="6.327044"
+       y1="11.005495"
+       x2="6.3375053"
+       y2="2.5084894"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="0"
+     inkscape:window-x="37"
+     inkscape:window-height="878"
+     inkscape:window-width="1403"
+     fit-margin-bottom="10"
+     fit-margin-right="10"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="35.899164"
+     inkscape:cx="-3.7918815"
+     inkscape:zoom="4.3942712"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <sodipodi:guide
+       id="guide38"
+       orientation="0,48"
+       position="3.9039343,10.930197" />
+    <sodipodi:guide
+       id="guide40"
+       orientation="48,0"
+       position="16.603934,10.930197" />
+    <sodipodi:guide
+       id="guide42"
+       orientation="0,-48"
+       position="16.603934,-1.769803" />
+    <sodipodi:guide
+       id="guide44"
+       orientation="-48,0"
+       position="3.9039343,-1.769803" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata33">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(3.9039343,-1.3500789)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Слой 1">
+    <text
+       id="text48"
+       y="8.5534563"
+       x="-1.9626789"
+       style="font-weight:500;font-size:5.64444px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';fill:url(#linearGradient949);fill-opacity:1;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="fill:url(#linearGradient949);fill-opacity:1;stroke-width:0.264583"
+         y="8.5534563"
+         x="-1.9626789"
+         id="tspan46"
+         sodipodi:role="line" /></text>
+    <text
+       transform="rotate(21)"
+       xml:space="preserve"
+       style="font-weight:500;font-size:5.64444px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Medium';fill:url(#linearGradient1052);stroke-width:0.264583"
+       x="6.0055575"
+       y="5.1327314"
+       id="text1044"><tspan
+         sodipodi:role="line"
+         id="tspan1042"
+         x="6.0055575"
+         y="5.1327314"
+         style="fill:url(#linearGradient1052);stroke-width:0.264583">{}</tspan></text>
+  </g>
+  <inkscape:templateinfo>
+    <inkscape:name>svg-icon for diplom</inkscape:name>
+    <inkscape:date>2019-10-27</inkscape:date>
+  </inkscape:templateinfo>
+</svg>
