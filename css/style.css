@@ -1,4 +1,30 @@
-@import "fonts.css";
+/* Roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+    url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
 /* рассчитываем высоту с учетом того, что мы не меняем, применяемую по умолчанию CSS модель */
 html, body {
     height: calc(100% - 8px);
@@ -20,29 +46,31 @@ ul, li {
 
 /* размеры шрифтов */
 .text__h1 {
-     font-size: 5em;
-     margin-bottom: 44px;
- }
- .text__h2 {
-     font-size: 3.3em;
- }
- .text__h3 {
-     font-size: 2.8em;
- }
- .text__h4 {
-     font-size: 1.6em;
- }
- .text__h5 {
-     font-size: 1.2em;
- }
- .text__h6 {
-     font-size: 1.15em;
- }
+    font-size: 4.3em;
+    margin-bottom: 44px;
+}
+.text__h2 {
+    font-size: 3.3em;
+}
+.text__h3 {
+    font-size: 2.8em;
+}
+.text__h4 {
+    font-size: 1.6em;
+}
+.text__h5 {
+    font-size: 1.2em;
+}
+.text__h6 {
+    font-size: 1.15em;
+}
 
 /* шрифты */
 .text__h1, .text__h2, .text__h3, .text__h4_bold {
     font-family: "Roboto Bold", serif;
 }
+
+/*noinspection CssUnusedSymbol*/
 .text__h4_reg-grey, .text__h4_reg-black, .text__h5, .text__h6 {
     font-family: "Roboto Regular", serif;
 }
@@ -61,6 +89,8 @@ ul, li {
 .text__h4_reg-grey {
     color: #8993ad;
 }
+
+/*noinspection ALL*/
 .text__h4_reg-black {
     color: #000000;
 }
@@ -73,6 +103,8 @@ ul, li {
 .text__h6-grey {
     color: #8993ad;
 }
+
+/*noinspection ALL*/
 .text__h6-black {
     color: #1f1f24;
 }
@@ -80,70 +112,82 @@ ul, li {
     color: #fc557c;
 }
 
-    /* menu-bar */
+/* menu-bar */
 .menu-bar {
     color: #1f1f24;
 }
     .menu__item {
         margin-left: 2.2em;
     }
-    .menu__item a:hover {
-        text-decoration: underline;
-        color: #fc557c;
-    }
+        .menu__item a:hover {
+            text-decoration: underline;
+            color: #fc557c;
+        }
 
 /* css для гамбургера */
-    .menu-bar__button,
-    .menu-bar__phone {
-        border: none;
-        background: none;
+.menu-bar__button,
+.menu-bar__phone {
+    border: none;
+    background: none;
+}
+.menu-bar__svg_menu:hover path,
+.menu-bar__svg_menu:focus path,
+.menu-bar__svg_menu:active path {
+    fill: #f82370;
+}
+.menu-bar__list {
+    padding: 10px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background: #f8eeee;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: absolute;
+    height: min-content;
+}
+    .menu-bar__list:hover {
+        -webkit-transform: rotate(-1deg);
+        transform: rotate(-1deg);
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
     }
-        .menu-bar__svg_menu:hover path,
-        .menu-bar__svg_menu:focus path,
-        .menu-bar__svg_menu:active path {
-            fill: #f82370;
-        }
-        .menu-bar__list {
-            padding: 20px 25px 20px 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-            background: #f8eeee;
-            display: inline-flex;
-        }
-        .menu-bar__list:hover {
-            transform: rotate(-1deg);
-            transition: 0.3s;
-            transform-origin: 0 0;
-        }
 
-    /* header */
+/* header */
 .header {
     height: 645px;
     margin-top: 40px;
-    background: url("../img/header-bg.png") no-repeat left calc(550px + 15%*2) top 0;
+    background: url("../diplom_with_BS+BE/img/header-bg.png") no-repeat left calc(550px + 15%*2) top 0;
     background-size: auto 100%;
     /*object-fit: cover;*/
-    }
+}
     .header__container {
         padding-top: 130px;
-        background: url("../img/svg/braces.svg") no-repeat 0 0,
-        url("../img/svg/div-back.svg") no-repeat 50% 10%,
-        url("../img/svg/sharp.svg") no-repeat -1% 60%,
-        url("../img/svg/div.svg") no-repeat 30% 95%,
-        url("../img/svg/copy-back.svg") no-repeat 40% 60%;
+        background: url("../diplom_with_BS+BE/img/svg/braces.svg") no-repeat 0 0,
+        url("../diplom_with_BS+BE/img/svg/div-back.svg") no-repeat 50% 10%,
+        url("../diplom_with_BS+BE/img/svg/sharp.svg") no-repeat -1% 60%,
+        url("../diplom_with_BS+BE/img/svg/div.svg") no-repeat 30% 95%,
+        url("../diplom_with_BS+BE/img/svg/copy-back.svg") no-repeat 40% 60%;
         background-size: 12%, 12%, 12%, 12%, 12%;
         animation: animeBgOne 20s ease infinite;
         -moz-animation: animeBgOne 20s ease infinite;
         -webkit-animation: animeBgOne 20s ease infinite;
         -o-animation: animeBgOne 20s ease infinite;
     }
-        @keyframes animeBgOne {
-            50% {
-                background-position: 10% 15%, 30% 12%, 20% 55%, 25% 85%, 30% 55%;
-            }
+    @-webkit-keyframes animeBgOne {
+        50% {
+            background-position: 10% 15%, 30% 12%, 20% 55%, 25% 85%, 30% 55%;
         }
+    }
+    @keyframes animeBgOne {
+        50% {
+            background-position: 10% 15%, 30% 12%, 20% 55%, 25% 85%, 30% 55%;
+        }
+    }
 
-    /* buttons */
+/* buttons */
 .button {
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
     .button_full {
@@ -152,26 +196,34 @@ ul, li {
         margin-top: 70px;
         border: none;
         background: #ff4e2e;
-        width: 270px;
+        width: 290px;
         text-wrap: none;
     }
+
     .button_empty {
-        padding: 18px 40px 16px;
+        padding: 18px 30px 16px;
         border: 1px solid #f82370;
+        width: 100%;
         background: none;
     }
-    .menu-bar__phone {
-        width: 36px;
-        height: 36px;
-        padding: 0;
-        border-radius: 50%;
-    }
-    .button_full:hover,
-    .button_empty:hover,
-    .menu-bar__button:hover,
-    .menu-bar__phone:hover{
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
+
+.menu-bar__phone {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button_full:hover,
+.button_empty:hover,
+.menu-bar__button:hover,
+.menu-bar__phone:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
 /* о нас */
 .about {
@@ -195,25 +247,34 @@ ul, li {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         background: #f8eeee;
     }
-        .about__link:hover:nth-child(odd) {
-            transform: rotate(-1deg);
-            transition: 0.3s;
-            transform-origin: 0 0;
-        }
-        .about__link:hover:nth-child(even) {
-            transform: rotate(1deg);
-            transition: 0.3s;
-            transform-origin: 0 0;
-        }
-        .about__link:hover .about__img {
-            transform: scale(1.1);
-        }
-        .about__link:hover .about__text {
-         color: #788097;
-        }
-        .about__link:hover a {
-            text-decoration: none;
-        }
+    .about__link:hover:nth-child(odd) {
+        -webkit-transform: rotate(-1deg);
+        transform: rotate(-1deg);
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+    .about__link:hover:nth-child(even) {
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+    .about__link:hover .about__img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    /*noinspection ALL*/
+    .about__link:hover .about__text {
+        color: #788097;
+    }
+    .about__link:hover a {
+        text-decoration: none;
+    }
 
 /* Примеры моих работ */
 .examples {
@@ -234,38 +295,38 @@ ul, li {
     .slick-dots {
         bottom: -45px;
     }
-        .slick-dots li button:before {
-            font-size: 10px;
-        }
-                .slick-dots li button:before {
-                    opacity: .1;
-                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
-                    color: red;
-                }
-                .slick-dots li.slick-active button:before {
-                    opacity: .75;
-                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-                    color: #de4f33;
-                }
-                .arrows {
-                    background: transparent;
-                    position: relative;
-                }
-                .arrows:active {
-                    outline: none;
-                }
-        #next {
-            position: absolute;
-            top: -22.3rem;
-            right: -5.2rem;
-        }
-        #prev {
-            position: absolute;
-            top: -22.3rem;
-            left: -5.2rem;
-        }
+    .slick-dots li button:before {
+        font-size: 10px;
+    }
+    .slick-dots li button:before {
+        opacity: .1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+        color: red;
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+        color: #de4f33;
+    }
+    .arrows {
+        background: transparent;
+        position: relative;
+    }
+    .arrows:active {
+        outline: none;
+    }
+    #next {
+        position: absolute;
+        top: -356px;
+        right: -83px;
+    }
+    #prev {
+        position: absolute;
+        top: -356px;
+        left: -83px;
+    }
 
-    /* поговорим о ценах */
+/* поговорим о ценах */
 .price {
     margin-top: 100px;
     padding: 80px 0;
@@ -278,16 +339,21 @@ ul, li {
     }
     .price__container {
         padding-top: 0;
-        background: url("../img/svg/braces-white.svg") no-repeat 0 98%,
-        url("../img/svg/sharp-white.svg") no-repeat 40% 95%,
-        url("../img/svg/copy-back-white.svg") no-repeat 55% 101%,
-        url("../img/svg/div-white.svg") no-repeat 80% 85%,
-        url("../img/svg/braces-back-white.svg") no-repeat 90% 90%;
+        background: url("../diplom_with_BS+BE/img/svg/braces-white.svg") no-repeat 0 98%,
+        url("../diplom_with_BS+BE/img/svg/sharp-white.svg") no-repeat 40% 95%,
+        url("../diplom_with_BS+BE/img/svg/copy-back-white.svg") no-repeat 55% 101%,
+        url("../diplom_with_BS+BE/img/svg/div-white.svg") no-repeat 80% 85%,
+        url("../diplom_with_BS+BE/img/svg/braces-back-white.svg") no-repeat 90% 90%;
         background-size: 11%, 10%, 11%, 10%, 10%;
         animation: animeBgTwo 20s ease infinite;
         -moz-animation: animeBgTwo 20s ease infinite;
         -webkit-animation: animeBgTwo 20s ease infinite;
         -o-animation: animeBgTwo 20s ease infinite;
+    }
+    @-webkit-keyframes animeBgTwo {
+        50% {
+            background-position: 5% 96%, 25% 90%, 60% 95%, 75% 80%, 100% 85%;
+        }
     }
     @keyframes animeBgTwo {
         50% {
@@ -295,7 +361,7 @@ ul, li {
         }
     }
 
-    /* info */
+/* info */
 .info {
     padding: 80px 0;
 }
@@ -314,9 +380,9 @@ ul, li {
         height: 30px;
         fill: #b2b7c8;
     }
-        .info__item_social svg:hover {
-            fill: #e35fb1;
-        }
+    .info__item_social svg:hover {
+        fill: #e35fb1;
+    }
     .info__section a:hover {
         color: #e35fb1;
     }
@@ -347,12 +413,9 @@ ul, li {
         height: 68px;
     }
     .button_full {
-        padding: 27px 80px 24px;
+        /*padding: 27px 80px 24px;*/
         margin-top: 50px;
         width: 320px;
-    }
-    .button_empty {
-        padding: 18px 60px 16px;
     }
     .about {
         padding: 100px 0;
@@ -379,26 +442,26 @@ ul, li {
     .info__item_social {
         width: 270px;
     }
-        .info__item_social svg {
-            width: 30px;
-            height: 25px;
-        }
+    .info__item_social svg {
+        width: 30px;
+        height: 25px;
+    }
 
     /*  фон шапки */
     .header {
         height: 630px;
         margin-top: 0;
-        background: url("../img/header-bg.png") no-repeat left calc(400px + 20%*2) top 0;
+        background: url("../diplom_with_BS+BE/img/header-bg.png") no-repeat left calc(400px + 20%*2) top 0;
         background-size: auto 100%;
     }
 
     .header__container {
         padding-top: 130px;
-        background: url("../img/svg/braces.svg") no-repeat 0 0,
-        url("../img/svg/div-back.svg") no-repeat 45% 3%,
-        url("../img/svg/sharp.svg") no-repeat 10% 50%,
-        url("../img/svg/div.svg") no-repeat 0 98%,
-        url("../img/svg/copy-back.svg") no-repeat 30% 48%;
+        background: url("../diplom_with_BS+BE/img/svg/braces.svg") no-repeat 0 0,
+        url("../diplom_with_BS+BE/img/svg/div-back.svg") no-repeat 45% 3%,
+        url("../diplom_with_BS+BE/img/svg/sharp.svg") no-repeat 10% 50%,
+        url("../diplom_with_BS+BE/img/svg/div.svg") no-repeat 0 98%,
+        url("../diplom_with_BS+BE/img/svg/copy-back.svg") no-repeat 30% 48%;
         background-size: 22%, 22%, 22%, 22%, 22%;
         animation: animeBgOne 20s ease infinite;
         -moz-animation: animeBgOne 20s ease infinite;
@@ -406,23 +469,34 @@ ul, li {
         -o-animation: animeBgOne 20s ease infinite;
     }
 
-        @keyframes animeBgOne {
-            50% {
-                background-position: 20% 5%, 35% 5%, 0 50%, 15% 99%, 15% 50%;
-            }
+    @-webkit-keyframes animeBgOne {
+        50% {
+            background-position: 20% 5%, 35% 5%, 0 50%, 15% 99%, 15% 50%;
         }
+    }
+
+    @keyframes animeBgOne {
+        50% {
+            background-position: 20% 5%, 35% 5%, 0 50%, 15% 99%, 15% 50%;
+        }
+    }
     .price__container {
         padding-top: 0;
-        background: url("../img/svg/braces-white.svg") no-repeat 0 80%,
-        url("../img/svg/sharp-white.svg") no-repeat 25% 85%,
-        url("../img/svg/copy-back-white.svg") no-repeat 45% 82%,
-        url("../img/svg/div-white.svg") no-repeat 75% 80%,
-        url("../img/svg/braces-back-white.svg") no-repeat 100% 70%;
+        background: url("../diplom_with_BS+BE/img/svg/braces-white.svg") no-repeat 0 80%,
+        url("../diplom_with_BS+BE/img/svg/sharp-white.svg") no-repeat 25% 85%,
+        url("../diplom_with_BS+BE/img/svg/copy-back-white.svg") no-repeat 45% 82%,
+        url("../diplom_with_BS+BE/img/svg/div-white.svg") no-repeat 75% 80%,
+        url("../diplom_with_BS+BE/img/svg/braces-back-white.svg") no-repeat 100% 70%;
         background-size: 20%, 20%, 20%, 18%, 20%;
         animation: animeBgTwo 20s ease infinite;
         -moz-animation: animeBgTwo 20s ease infinite;
         -webkit-animation: animeBgTwo 20s ease infinite;
         -o-animation: animeBgTwo 20s ease infinite;
+    }
+    @-webkit-keyframes animeBgTwo {
+        50% {
+            background-position: 10% 82%, 20% 82%, 50% 85%, 85% 85%, 95% 72%;
+        }
     }
     @keyframes animeBgTwo {
         50% {
@@ -436,13 +510,14 @@ ul, li {
     .header {
         background-position: calc(250px + 25%*2);
     }
-        .header__container button {
-            padding: 27px 40px 24px;
-            width: auto;
-        }
+    .header__container button {
+        padding: 27px 40px 24px;
+        width: auto;
+    }
 
 }
 
+/*noinspection ALL*/
 @media (min-width: 577px) AND (max-width: 767px) {
 
     .text__h1,
@@ -453,7 +528,7 @@ ul, li {
         font-size: 1.17em;
     }
     .text__h4 {
-       font-size: 1em;
+        font-size: 1em;
     }
     .text__h5 {
         font-size: 0.83em;
@@ -477,40 +552,50 @@ ul, li {
     /* header-mob */
     .header-mob {
         margin-top: 20px;
-        background: url("../img/svg/braces.svg") no-repeat 0 0,
-        url("../img/svg/copy-back.svg") no-repeat 55% -1%,
-        url("../img/svg/sharp.svg") no-repeat 5% 30%,
-        url("../img/svg/div.svg") no-repeat 90% 0;
+        background: url("../diplom_with_BS+BE/img/svg/braces.svg") no-repeat 0 0,
+        url("../diplom_with_BS+BE/img/svg/copy-back.svg") no-repeat 55% -1%,
+        url("../diplom_with_BS+BE/img/svg/sharp.svg") no-repeat 5% 30%,
+        url("../diplom_with_BS+BE/img/svg/div.svg") no-repeat 90% 0;
         background-size: 22%, 22%, 22%, 22%, 22%;
         animation: animeBgOne 20s ease infinite;
         -moz-animation: animeBgOne 20s ease infinite;
         -webkit-animation: animeBgOne 20s ease infinite;
         -o-animation: animeBgOne 20s ease infinite;
     }
-        @keyframes animeBgOne {
-            50% {
-                background-position: 20% 1%, 45% -3%, 10% 25%, 90% 5%;
-            }
+    @-webkit-keyframes animeBgOne {
+        50% {
+            background-position: 20% 1%, 45% -3%, 10% 25%, 90% 5%;
         }
-        .header-mob__img {
-            height: 420px;
-            overflow: hidden;
+    }
+    @keyframes animeBgOne {
+        50% {
+            background-position: 20% 1%, 45% -3%, 10% 25%, 90% 5%;
         }
-        .header-mob__img img {
-            height: auto;
-            width: 100%;
-        }
-        .header__text {
-            text-align: center;
-            height: 180px;
-        }
-        .header__text .text__h1 {
-            padding: 9px 0;
-            margin: 0;
-        }
-        .header__text .button_full {
-            margin-top: 30px;
-        }
+    }
+    .header-mob__img {
+        height: 420px;
+        overflow: hidden;
+    }
+    .header-mob__img img {
+        height: auto;
+        width: 100%;
+    }
+    .header__text {
+        text-align: center;
+        height: 180px;
+    }
+    .header__text .text__h1 {
+        padding: 9px 0;
+        margin: 0;
+    }
+    .header__text .button_full {
+        margin-top: 30px;
+    }
+
+    .callback_form {
+        width: calc(100% - 50px);
+    }
+
     .button_full {
         padding-top: 22px;
         padding-bottom: 20px;
@@ -520,90 +605,95 @@ ul, li {
         padding-top: 39px;
         padding-bottom: 0;
     }
-        .about__link {
-            margin-top: 20px;
-            padding-top: 20px;
-        }
-            .about__link .text__h5 {
-                padding: 20px 20px 10px;
-                margin-bottom: 0;
-            }
-        .about__row_items {
-            padding: 0;
-        }
-        .about__img {
-            margin: 0;
-            padding: 0;
-            width: 60px;
-            height: 60px;
-        }
-        .about .button_full {
-            margin-top: 10px;
-        }
+    .about__link {
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .about__link .text__h5 {
+        padding: 20px 20px 10px;
+        margin-bottom: 0;
+    }
+    .about__row_items {
+        padding: 0;
+    }
+    .about__img {
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+    }
+    .about .button_full {
+        margin-top: 10px;
+    }
     .examples {
         padding-top: 42px;
         padding-bottom: 0;
     }
-        .examples__slider {
-            padding: 24px 0;
-        }
-        .examples__img {
-            padding-bottom: 0;
-        }
-        .slick-dots {
-            bottom: -45px;
-        }
-        .slick-dots li button:before {
-            font-size: 12px;
-        }
-        .examples__button {
-            margin-top: 0;
-            padding-top: 0;
-        }
-        .examples__button button {
-            margin-top: 50px;
-        }
+    .examples__slider {
+        padding: 24px 0;
+    }
+    .examples__img {
+        padding-bottom: 0;
+    }
+    .slick-dots {
+        bottom: -45px;
+    }
+    .slick-dots li button:before {
+        font-size: 12px;
+    }
+    .examples__button {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .examples__button button {
+        margin-top: 50px;
+    }
     .price {
         margin-top: 50px;
         padding: 50px 0;
     }
-        .price__container {
-            background: url("../img/svg/braces-white.svg") no-repeat 0 77%,
-            url("../img/svg/sharp-white.svg") no-repeat 25% 82%,
-            url("../img/svg/copy-back-white.svg") no-repeat 45% 79%,
-            url("../img/svg/div-white.svg") no-repeat 75% 77%,
-            url("../img/svg/braces-back-white.svg") no-repeat 100% 67%;
-            background-size: 16%, 16%, 16%, 12%, 16%;
-            animation: animeBgTwo 20s ease infinite;
-            -moz-animation: animeBgTwo 20s ease infinite;
-            -webkit-animation: animeBgTwo 20s ease infinite;
-            -o-animation: animeBgTwo 20s ease infinite;
+    .price__container {
+        background: url("../diplom_with_BS+BE/img/svg/braces-white.svg") no-repeat 0 77%,
+        url("../diplom_with_BS+BE/img/svg/sharp-white.svg") no-repeat 25% 82%,
+        url("../diplom_with_BS+BE/img/svg/copy-back-white.svg") no-repeat 45% 79%,
+        url("../diplom_with_BS+BE/img/svg/div-white.svg") no-repeat 75% 77%,
+        url("../diplom_with_BS+BE/img/svg/braces-back-white.svg") no-repeat 100% 67%;
+        background-size: 16%, 16%, 16%, 12%, 16%;
+        animation: animeBgTwo 20s ease infinite;
+        -moz-animation: animeBgTwo 20s ease infinite;
+        -webkit-animation: animeBgTwo 20s ease infinite;
+        -o-animation: animeBgTwo 20s ease infinite;
+    }
+    @-webkit-keyframes animeBgTwo {
+        50% {
+            background-position: 10% 79%, 20% 79%, 50% 82%, 85% 68%, 95% 69%;
         }
-            @keyframes animeBgTwo {
-                50% {
-                    background-position: 10% 79%, 20% 79%, 50% 82%, 85% 68%, 95% 69%;
-                }
-            }
+    }
+    @keyframes animeBgTwo {
+        50% {
+            background-position: 10% 79%, 20% 79%, 50% 82%, 85% 68%, 95% 69%;
+        }
+    }
     .info {
         padding: 50px 0;
     }
-        .info__contacts_icon {
-            padding-right: 20px;
-        }
-        .info__item_social {
-            padding-top: 30px;
-        }
-        .info__item .button_full {
-            margin-top: 30px;
-        }
-        .info__item_social {
-            padding-top: 50px;
-            width: 320px;
-        }
-        .info__item_social svg {
-            width: 30px;
-            height: 25px;
-        }
+    .info__contacts_icon {
+        padding-right: 20px;
+    }
+    .info__item_social {
+        padding-top: 30px;
+    }
+    .info__item .button_full {
+        margin-top: 30px;
+    }
+    .info__item_social {
+        padding-top: 50px;
+        width: 320px;
+    }
+    .info__item_social svg {
+        width: 30px;
+        height: 25px;
+    }
     .footer {
         padding: 17px 0;
     }
@@ -635,177 +725,199 @@ ul, li {
     .menu-bar__div-empty {
         height: 64px;
     }
+    .menu-bar__list {
+        padding: 10px;
+    }
+    .menu__item {
+        margin-left: 1em;
+    }
 
     /* header-mob */
     .header-mob {
         margin-top: -30px;
-        background: url("../img/svg/braces.svg") no-repeat 0 0,
-        url("../img/svg/copy-back.svg") no-repeat 55% 1%,
-        url("../img/svg/sharp.svg") no-repeat 0 15%,
-        url("../img/svg/div.svg") no-repeat 90% 0;
+        background: url("../diplom_with_BS+BE/img/svg/braces.svg") no-repeat 0 0,
+        url("../diplom_with_BS+BE/img/svg/copy-back.svg") no-repeat 55% 1%,
+        url("../diplom_with_BS+BE/img/svg/sharp.svg") no-repeat 0 15%,
+        url("../diplom_with_BS+BE/img/svg/div.svg") no-repeat 90% 0;
         background-size: 22%, 22%, 22%, 22%, 22%;
         animation: animeBgOne 20s ease infinite;
         -moz-animation: animeBgOne 20s ease infinite;
         -webkit-animation: animeBgOne 20s ease infinite;
         -o-animation: animeBgOne 20s ease infinite;
     }
-        @keyframes animeBgOne {
-            50% {
-                background-position: 20% 1%, 45% 0, 0 25%, 95% 0;
-            }
+    @-webkit-keyframes animeBgOne {
+        50% {
+            background-position: 20% 1%, 45% 0, 0 25%, 95% 0;
         }
-        .header-mob__img {
-            height: 329px;
-            overflow: hidden;
-            margin-left: -15px;
-            margin-right: -15px
+    }
+    @keyframes animeBgOne {
+        50% {
+            background-position: 20% 1%, 45% 0, 0 25%, 95% 0;
         }
-        .header-mob__img img {
-            height: auto;
-            width: 100%;
-        }
-        .header__text {
-            text-align: center;
-            height: 180px;
-        }
-        .header__text-small {
-            width: 220px;
-            margin: 0 auto;
-        }
-        .header__text .text__h1 {
-            padding: 21px 0;
-            margin: 0;
-        }
-        .header__text .button_full {
-            margin-top: 30px;
-        }
-        .button_full {
-            padding-top: 22px;
-            padding-bottom: 20px;
-            width: 270px;
-            margin-top: 0;
-            text-wrap: none;
-        }
+    }
+    .header-mob__img {
+        height: 329px;
+        overflow: hidden;
+        margin-left: -15px;
+        margin-right: -15px
+    }
+    .header-mob__img img {
+        height: auto;
+        width: 100%;
+    }
+    .header__text {
+        text-align: center;
+        height: 180px;
+    }
+    .header__text-small {
+        width: 220px;
+        margin: 0 auto;
+    }
+    .header__text .text__h1 {
+        padding: 21px 0;
+        margin: 0;
+    }
+    .header__text .button_full {
+        margin-top: 30px;
+    }
+    .button_full {
+        padding-top: 22px;
+        padding-bottom: 20px;
+        width: 270px;
+        margin-top: 0;
+        text-wrap: none;
+    }
+
+    /*noinspection CssUnusedSymbol*/
+    .callback_form {
+        width: 270px;
+    }
     .about {
         padding-top: 41px;
         padding-bottom: 0;
     }
-        .about .text__h2 {
-            margin-bottom: 6px;
-        }
-        .about__link {
-            margin-top: 20px;
-            padding-top: 20px;
-            width: 220px;
-        }
-        .about__link .text__h5 {
-            padding: 20px 20px 10px;
-            margin-bottom: 0;
-        }
-        .about__row_items {
-            padding: 0;
-        }
-        .about__img {
-            margin: 0;
-            padding: 0;
-            width: 60px;
-            height: 60px;
-        }
-        .about .button_full {
-            margin-top: 40px;
-        }
+    .about .text__h2 {
+        margin-bottom: 6px;
+    }
+    .about__link {
+        margin-top: 20px;
+        padding-top: 20px;
+        width: 220px;
+    }
+    .about__link .text__h5 {
+        padding: 20px 20px 10px;
+        margin-bottom: 0;
+    }
+    .about__row_items {
+        padding: 0;
+    }
+    .about__img {
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+    }
+    .about .button_full {
+        margin-top: 40px;
+    }
 
     .examples {
         margin-top: 50px;
         padding-top: 42px;
         padding-bottom: 0;
     }
-        .examples__slider {
-            padding: 10px 0;
-        }
-        .examples__img {
-            padding-bottom: 0;
-        }
-        .slick-dots {
-            bottom: -45px;
-        }
-        .slick-dots li button:before {
-            font-size: 12px;
-        }
-        .examples__button {
-            margin-top: 0;
-            padding-top: 0;
-        }
-        .examples__button button {
-            margin-top: 50px;
-        }
+    .examples__slider {
+        padding: 10px 0;
+    }
+    .examples__img {
+        padding-bottom: 0;
+    }
+    .slick-dots {
+        bottom: -45px;
+    }
+    .slick-dots li button:before {
+        font-size: 12px;
+    }
+    .examples__button {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .examples__button button {
+        margin-top: 50px;
+    }
 
     .price {
         margin-top: 50px;
         padding: 50px 0;
     }
-        .price__container {
-            background: url("../img/svg/braces-white.svg") no-repeat 0 63%,
-            url("../img/svg/sharp-white.svg") no-repeat 25% 68%,
-            url("../img/svg/copy-back-white.svg") no-repeat 45% 64%,
-            url("../img/svg/div-white.svg") no-repeat 75% 62%,
-            url("../img/svg/braces-back-white.svg") no-repeat 100% 62%;
-            background-size: 16%, 16%, 16%, 12%, 16%;
-            animation: animeBgTwo 20s ease infinite;
-            -moz-animation: animeBgTwo 20s ease infinite;
-            -webkit-animation: animeBgTwo 20s ease infinite;
-            -o-animation: animeBgTwo 20s ease infinite;
+    .price__container {
+        background: url("../diplom_with_BS+BE/img/svg/braces-white.svg") no-repeat 0 63%,
+        url("../diplom_with_BS+BE/img/svg/sharp-white.svg") no-repeat 25% 68%,
+        url("../diplom_with_BS+BE/img/svg/copy-back-white.svg") no-repeat 45% 64%,
+        url("../diplom_with_BS+BE/img/svg/div-white.svg") no-repeat 75% 62%,
+        url("../diplom_with_BS+BE/img/svg/braces-back-white.svg") no-repeat 100% 62%;
+        background-size: 16%, 16%, 16%, 12%, 16%;
+        animation: animeBgTwo 20s ease infinite;
+        -moz-animation: animeBgTwo 20s ease infinite;
+        -webkit-animation: animeBgTwo 20s ease infinite;
+        -o-animation: animeBgTwo 20s ease infinite;
+    }
+    @-webkit-keyframes animeBgTwo {
+        50% {
+            background-position: 10% 64%, 20% 64%, 50% 68%, 85% 61%, 95% 64%;
         }
-        @keyframes animeBgTwo {
-            50% {
-                background-position: 10% 64%, 20% 64%, 50% 68%, 85% 61%, 95% 64%;
-            }
+    }
+    @keyframes animeBgTwo {
+        50% {
+            background-position: 10% 64%, 20% 64%, 50% 68%, 85% 61%, 95% 64%;
         }
+    }
 
     .info {
         padding: 50px 0;
     }
-        .info__section {
-            padding-left: 5px;
-        }
-        .info__item:first-child {
-            margin-bottom: 30px;
-            margin-left: 35px;
-        }
-            .info__item:nth-child(2) .info__section:nth-child(1) {
-                margin: 7px 0 20px;
-            }
-        .info__btn {
-            margin-top: 30px;
-        }
-            .info__btn .button_full {
-                margin: 0 auto;
-            }
-        .info__contacts_icon {
-            padding-right: 20px;
-        }
-        .info__item_social {
-            padding: 50px 15px 0;
-            width: 270px;
-            margin: 0 auto;
-        }
-            .info__item_social svg:first-child {
-                width: 35px;
-                height: 19px;
-            }
-            .info__item_social svg:nth-child(2) {
-                width: 16px;
-                height: 28px;
-            }
-            .info__item_social svg:nth-child(3) {
-                width: 29px;
-                height: 24px;
-            }
-            .info__item_social svg:nth-child(4) {
-                width: 25px;
-                height: 25px;
+    .info__section {
+        padding-left: 5px;
+    }
+    .info__item:first-child {
+        margin-bottom: 30px;
+        margin-left: 35px;
+    }
+    .info__item:nth-child(2) .info__section:nth-child(1) {
+        margin: 7px 0 20px;
+    }
+    .info__btn {
+        margin-top: 30px;
+    }
+    .info__btn .button_full {
+        margin: 0 auto;
+    }
+    .info__contacts_icon {
+        padding-right: 20px;
+    }
+    .info__item_social {
+        padding: 50px 15px 0;
+        width: 270px;
+        margin: 0 auto;
+    }
+    .info__item_social svg:first-child {
+        width: 35px;
+        height: 19px;
+    }
+    .info__item_social svg:nth-child(2) {
+        width: 16px;
+        height: 28px;
+    }
+    .info__item_social svg:nth-child(3) {
+        width: 29px;
+        height: 24px;
+    }
+    .info__item_social svg:nth-child(4) {
+        width: 25px;
+        height: 25px;
     }
     .footer {
         padding: 20px 0;
     }
 }
+

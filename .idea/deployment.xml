@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_TIMESTAMP" serverName="ru-center" traceLevel="BRIEF" exclude=".svn;.cvs;.idea;.DS_Store;.hg;*.hprof;*.pyc" autoUploadExternalChanges="true" notifyRemoteChanges="true">
-    <serverData>
-      <paths name="ru-center">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/diplom_with_BS+BEM" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
-  </component>
+  <component name="PublishConfigData" promptOnRemoteOverwrite="CHECK_TIMESTAMP" traceLevel="BRIEF" exclude=".svn;.cvs;.idea;.DS_Store;.hg;*.hprof;*.pyc" autoUploadExternalChanges="true" notifyRemoteChanges="true" />
 </project>

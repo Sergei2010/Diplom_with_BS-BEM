@@ -88,14 +88,16 @@ $(function () {
     $('.menu-bar__div-empty').css('display', 'block');
 
     $('.menu-bar__button').on('click', function () {
-        $('.menu-bar__list').toggle();
-        $('.menu-bar__div-empty').toggle();
+        $('.menu-bar__list').slideToggle(700);
     });
 
-    $('.menu-bar__list').hide()
-        .mouseleave(function () {
+    $('.menu-bar__list').hide().on('mouseleave', function () {
         $(this).hide();
         $('.menu-bar__div-empty').toggle();
     });
 
+
+    /*contact_form*/
+
 });
+

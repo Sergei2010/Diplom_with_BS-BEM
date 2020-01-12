@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87841B9623AD038200012B64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87841B9523AD038200012B64 /* AppDelegate.swift */; };
+		87841B9823AD038300012B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87841B9723AD038300012B64 /* Assets.xcassets */; };
+		87841B9B23AD038300012B64 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87841B9923AD038300012B64 /* MainMenu.xib */; };
+		87841BA723AD038300012B64 /* diplom_with_BS_BETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87841BA623AD038300012B64 /* diplom_with_BS_BETests.swift */; };
+		87841BB223AD038300012B64 /* diplom_with_BS_BEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87841BB123AD038300012B64 /* diplom_with_BS_BEUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87841BA323AD038300012B64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87841B8A23AD038200012B64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87841B9123AD038200012B64;
+			remoteInfo = "diplom_with_BS+BE";
+		};
+		87841BAE23AD038300012B64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87841B8A23AD038200012B64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87841B9123AD038200012B64;
+			remoteInfo = "diplom_with_BS+BE";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87841B9223AD038200012B64 /* diplom_with_BS+BE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "diplom_with_BS+BE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87841B9523AD038200012B64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87841B9723AD038300012B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87841B9A23AD038300012B64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		87841B9C23AD038300012B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87841B9D23AD038300012B64 /* diplom_with_BS_BE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = diplom_with_BS_BE.entitlements; sourceTree = "<group>"; };
+		87841BA223AD038300012B64 /* diplom_with_BS+BETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diplom_with_BS+BETests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87841BA623AD038300012B64 /* diplom_with_BS_BETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diplom_with_BS_BETests.swift; sourceTree = "<group>"; };
+		87841BA823AD038300012B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87841BAD23AD038300012B64 /* diplom_with_BS+BEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "diplom_with_BS+BEUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87841BB123AD038300012B64 /* diplom_with_BS_BEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diplom_with_BS_BEUITests.swift; sourceTree = "<group>"; };
+		87841BB323AD038300012B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87841B8F23AD038200012B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87841B9F23AD038300012B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87841BAA23AD038300012B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87841B8923AD038200012B64 = {
+			isa = PBXGroup;
+			children = (
+				87841B9423AD038200012B64 /* diplom_with_BS+BE */,
+				87841BA523AD038300012B64 /* diplom_with_BS+BETests */,
+				87841BB023AD038300012B64 /* diplom_with_BS+BEUITests */,
+				87841B9323AD038200012B64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87841B9323AD038200012B64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87841B9223AD038200012B64 /* diplom_with_BS+BE.app */,
+				87841BA223AD038300012B64 /* diplom_with_BS+BETests.xctest */,
+				87841BAD23AD038300012B64 /* diplom_with_BS+BEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87841B9423AD038200012B64 /* diplom_with_BS+BE */ = {
+			isa = PBXGroup;
+			children = (
+				87841B9523AD038200012B64 /* AppDelegate.swift */,
+				87841B9723AD038300012B64 /* Assets.xcassets */,
+				87841B9923AD038300012B64 /* MainMenu.xib */,
+				87841B9C23AD038300012B64 /* Info.plist */,
+				87841B9D23AD038300012B64 /* diplom_with_BS_BE.entitlements */,
+			);
+			path = "diplom_with_BS+BE";
+			sourceTree = "<group>";
+		};
+		87841BA523AD038300012B64 /* diplom_with_BS+BETests */ = {
+			isa = PBXGroup;
+			children = (
+				87841BA623AD038300012B64 /* diplom_with_BS_BETests.swift */,
+				87841BA823AD038300012B64 /* Info.plist */,
+			);
+			path = "diplom_with_BS+BETests";
+			sourceTree = "<group>";
+		};
+		87841BB023AD038300012B64 /* diplom_with_BS+BEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87841BB123AD038300012B64 /* diplom_with_BS_BEUITests.swift */,
+				87841BB323AD038300012B64 /* Info.plist */,
+			);
+			path = "diplom_with_BS+BEUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87841B9123AD038200012B64 /* diplom_with_BS+BE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87841BB623AD038300012B64 /* Build configuration list for PBXNativeTarget "diplom_with_BS+BE" */;
+			buildPhases = (
+				87841B8E23AD038200012B64 /* Sources */,
+				87841B8F23AD038200012B64 /* Frameworks */,
+				87841B9023AD038200012B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "diplom_with_BS+BE";
+			productName = "diplom_with_BS+BE";
+			productReference = 87841B9223AD038200012B64 /* diplom_with_BS+BE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87841BA123AD038300012B64 /* diplom_with_BS+BETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87841BB923AD038300012B64 /* Build configuration list for PBXNativeTarget "diplom_with_BS+BETests" */;
+			buildPhases = (
+				87841B9E23AD038300012B64 /* Sources */,
+				87841B9F23AD038300012B64 /* Frameworks */,
+				87841BA023AD038300012B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87841BA423AD038300012B64 /* PBXTargetDependency */,
+			);
+			name = "diplom_with_BS+BETests";
+			productName = "diplom_with_BS+BETests";
+			productReference = 87841BA223AD038300012B64 /* diplom_with_BS+BETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87841BAC23AD038300012B64 /* diplom_with_BS+BEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87841BBC23AD038300012B64 /* Build configuration list for PBXNativeTarget "diplom_with_BS+BEUITests" */;
+			buildPhases = (
+				87841BA923AD038300012B64 /* Sources */,
+				87841BAA23AD038300012B64 /* Frameworks */,
+				87841BAB23AD038300012B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87841BAF23AD038300012B64 /* PBXTargetDependency */,
+			);
+			name = "diplom_with_BS+BEUITests";
+			productName = "diplom_with_BS+BEUITests";
+			productReference = 87841BAD23AD038300012B64 /* diplom_with_BS+BEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87841B8A23AD038200012B64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Sergey;
+				TargetAttributes = {
+					87841B9123AD038200012B64 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					87841BA123AD038300012B64 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 87841B9123AD038200012B64;
+					};
+					87841BAC23AD038300012B64 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 87841B9123AD038200012B64;
+					};
+				};
+			};
+			buildConfigurationList = 87841B8D23AD038200012B64 /* Build configuration list for PBXProject "diplom_with_BS+BE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87841B8923AD038200012B64;
+			productRefGroup = 87841B9323AD038200012B64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87841B9123AD038200012B64 /* diplom_with_BS+BE */,
+				87841BA123AD038300012B64 /* diplom_with_BS+BETests */,
+				87841BAC23AD038300012B64 /* diplom_with_BS+BEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87841B9023AD038200012B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87841B9823AD038300012B64 /* Assets.xcassets in Resources */,
+				87841B9B23AD038300012B64 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87841BA023AD038300012B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87841BAB23AD038300012B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87841B8E23AD038200012B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87841B9623AD038200012B64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87841B9E23AD038300012B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87841BA723AD038300012B64 /* diplom_with_BS_BETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87841BA923AD038300012B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87841BB223AD038300012B64 /* diplom_with_BS_BEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87841BA423AD038300012B64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87841B9123AD038200012B64 /* diplom_with_BS+BE */;
+			targetProxy = 87841BA323AD038300012B64 /* PBXContainerItemProxy */;
+		};
+		87841BAF23AD038300012B64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87841B9123AD038200012B64 /* diplom_with_BS+BE */;
+			targetProxy = 87841BAE23AD038300012B64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87841B9923AD038300012B64 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87841B9A23AD038300012B64 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87841BB423AD038300012B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87841BB523AD038300012B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		87841BB723AD038300012B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "diplom_with_BS+BE/diplom_with_BS_BE.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F438V9X72X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "diplom_with_BS+BE/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.diplom-with-BS-BE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		87841BB823AD038300012B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "diplom_with_BS+BE/diplom_with_BS_BE.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F438V9X72X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "diplom_with_BS+BE/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.diplom-with-BS-BE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		87841BBA23AD038300012B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F438V9X72X;
+				INFOPLIST_FILE = "diplom_with_BS+BETests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.diplom-with-BS-BETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diplom_with_BS+BE.app/Contents/MacOS/diplom_with_BS+BE";
+			};
+			name = Debug;
+		};
+		87841BBB23AD038300012B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F438V9X72X;
+				INFOPLIST_FILE = "diplom_with_BS+BETests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.diplom-with-BS-BETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/diplom_with_BS+BE.app/Contents/MacOS/diplom_with_BS+BE";
+			};
+			name = Release;
+		};
+		87841BBD23AD038300012B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F438V9X72X;
+				INFOPLIST_FILE = "diplom_with_BS+BEUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.diplom-with-BS-BEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "diplom_with_BS+BE";
+			};
+			name = Debug;
+		};
+		87841BBE23AD038300012B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F438V9X72X;
+				INFOPLIST_FILE = "diplom_with_BS+BEUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.diplom-with-BS-BEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "diplom_with_BS+BE";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87841B8D23AD038200012B64 /* Build configuration list for PBXProject "diplom_with_BS+BE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87841BB423AD038300012B64 /* Debug */,
+				87841BB523AD038300012B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87841BB623AD038300012B64 /* Build configuration list for PBXNativeTarget "diplom_with_BS+BE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87841BB723AD038300012B64 /* Debug */,
+				87841BB823AD038300012B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87841BB923AD038300012B64 /* Build configuration list for PBXNativeTarget "diplom_with_BS+BETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87841BBA23AD038300012B64 /* Debug */,
+				87841BBB23AD038300012B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87841BBC23AD038300012B64 /* Build configuration list for PBXNativeTarget "diplom_with_BS+BEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87841BBD23AD038300012B64 /* Debug */,
+				87841BBE23AD038300012B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87841B8A23AD038200012B64 /* Project object */;
+}

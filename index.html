@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="slick-master/slick/slick.css"/> <!--slick plugin-->
     <link rel="stylesheet" type="text/css" href="slick-master/slick/slick-theme.css"/> <!--slick plugin-->
+
     <!--Add the new slick-theme.css if you want the default styling-->
     <link href="fontawesome-free-5.11.2-web/css/fontawesome.css" rel="stylesheet">    <!-- fontawesome -->
     <link href="fontawesome-free-5.11.2-web/css/brands.css" rel="stylesheet">         <!-- fontawesome -->
     <link href="fontawesome-free-5.11.2-web/css/solid.css" rel="stylesheet">          <!-- fontawesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- favicon start -->
-    <script type="text/javascript" nonce="c642620cc5aa49bd8042bc7274c" src="//local.adguard.org?ts=1573728787444&amp;
-        type=content-script&amp;dmn=realfavicongenerator.net&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1"></script>
-    <script type="text/javascript" nonce="c642620cc5aa49bd8042bc7274c"
-            src="//local.adguard.org?ts=1573728787444&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;
-            type=user-script"></script><link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0/favicon-16x16.png">
 
@@ -29,12 +25,13 @@
     <!-- favicon stop -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="popup/popup.style.css" rel="stylesheet">
     <title>Diplom_with_BS+BEM</title>
 </head>
 <body>
     <header class="menu-bar">
         <div class="container">
-            <div class="row menu-bar__row justify-content-between">
+            <div class="row menu-bar__row">
                 <div class="d-none d-xl-flex col-xl-4 mr-auto align-self-center">
                     <nav>
                         <ul class="menu d-none d-xl-flex">
@@ -45,21 +42,27 @@
                     </nav>
                 </div>
                 <!-- добавляем гамбургер до размера xl и размещаем его в отдельный  script -->
-                <div class="d-flex d-xl-none col-2">
-                    <button class="menu-bar__button text-center">
-                        <img src="img/svg/menu.svg" class="menu-bar__svg_menu" alt="menu">
+                <div class="d-flex d-xl-none col">
+                    <button type="button" class="menu-bar__button text-center">
+                        <img src="diplom_with_BS+BE/img/svg/menu.svg" class="menu-bar__svg_menu" alt="menu">
                     </button>
                 </div>
-                <div class="col-xl-3 col-5 align-self-center text-center text-md-right">
+
+                <div class="col-xl-3 col align-self-center text-center text-md-right">
                     <div class="text__h4 text__h4_bold text-nowrap">+7(499)995-55-77</div>
                 </div>
+
                 <div class="d-none d-md-flex col-xl-3 col-md-auto">
-                    <button class="button button_empty text__h6 text__h6-red text-nowrap">Заказать звонок</button>
-                </div>
-                <div class="d-md-none col-2 text-center">
-                    <button class="menu-bar__phone text-center">
-                        <img src="img/svg/phone-circle.svg" class="menu-bar__svg_phone" alt="phone">
+                    <button type="button" class="button button_empty text__h6 text__h6-red text-nowrap" data-modal="modal_1">
+                        Заказать звонок
                     </button>
+                </div>
+                <div class="d-md-none col">
+                    <div class="row justify-content-end">
+                        <button type="button" class="button menu-bar__phone" data-modal="modal_1">
+                            <img src="diplom_with_BS+BE/img/svg/phone-circle.svg" class="menu-bar__svg_phone" alt="phone">
+                        </button>
+                    </div>
                 </div>
             </div>
             <nav>
@@ -69,21 +72,27 @@
                     <li class="menu__item"><a href="#" class="text__h6 text__h6-grey">Стоимость</a></li>
                 </ul>
             </nav>
-            <div class="menu-bar__div-empty">&nbsp;</div>
+            <div class="menu-bar__div-empty"></div>
         </div>
+
     </header>
 
     <header class="header-mob d-flex d-md-none">
         <div class="container">
             <div class="header-mob__img">
-                <img src="img/bg-man-ellips.png" alt="man">
+                <img src="diplom_with_BS+BE/img/bg-man-ellips.png" alt="man">
             </div>
             <div class="header__text">
                 <div class="text__h1">Дмитрий Алексеев</div>
-                <div class="text__h4 text__h4_reg-grey header__text-small">Frontend-разработчик и
-                    веб-верстальщик</div>
-                <div class="">
-                    <button class="button button_full text__h6 text__h6-white">Узнать больше</button>
+                <div class="text__h4 text__h4_reg-grey header__text-small">
+                    Frontend-разработчик и веб-верстальщик
+                </div>
+                <div class="row justify-content-center">
+                    <div class="d-flex col-auto">
+                        <button type="button" class="button button_full text__h6 text__h6-white" data-modal="modal_2">
+                            Узнать больше
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,8 +105,12 @@
                     <div class="text__h4 text__h4_reg-grey header__text-small">
                         Frontend-разработчик &nbsp;и&nbsp;веб-верстальщик
                     </div>
-                    <div class="">
-                        <button class="button button_full text__h6 text__h6-white">Узнать больше</button>
+                    <div class="row justify-content-left">
+                        <div class="d-flex col-auto">
+                            <button type="button" class="button button_full text__h6 text__h6-white" data-modal="modal_2">
+                                Узнать больше
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,37 +120,39 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-12"><p class="text__h2">Что я делаю</p></div>
+                <div class="col-md-12"><h2 class="text__h2">Что я делаю</h2></div>
             </div>
             <div class="row about__row_items justify-content-center">
                  <div class="col-xl-3 col-md-5 col-sm-6  about__link">
                      <a href="#">
-                         <img src="img/tools-and-utensils.png" class="about__img" alt="coding">
+                         <img src="diplom_with_BS+BE/img/tools-and-utensils.png" class="about__img" alt="coding">
                          <p class="text__h5">Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</p>
                      </a>
                  </div>
                 <div class="col-xl-3 col-md-5 col-sm-6 about__link">
                     <a href="#">
-                        <img src="img/responsive.png" class="about__img" alt="coding">
+                        <img src="diplom_with_BS+BE/img/responsive.png" class="about__img" alt="coding">
                         <p class="text__h5">Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
                     </a>
                 </div>
                 <div class="col-xl-3 col-md-5 col-sm-6 about__link">
                     <a href="#">
-                        <img src="img/programming.png" class="about__img" alt="coding">
+                        <img src="diplom_with_BS+BE/img/programming.png" class="about__img" alt="coding">
                         <p class="text__h5">Frontend&mdash;разработка и&nbsp;программирование</p>
                     </a>
                 </div>
                 <div class="col-xl-3 col-md-5 col-sm-6 about__link">
                     <a href="#">
-                        <img src="img/coding.png" class="about__img" alt="coding">
+                        <img src="diplom_with_BS+BE/img/coding.png" class="about__img" alt="coding">
                         <p class="text__h5">Исправление и&nbsp;доработка существующей вёрстки</p>
                     </a>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12">
-                    <button class="button button_full text__h6 text__h6-white">Узнать стоимость</button>
+                <div class="d-flex col-auto">
+                    <button type="button" class="button button_full text__h6 text__h6-white" data-modal="modal_2">
+                        Узнать стоимость
+                    </button>
                 </div>
             </div>
         </div>
@@ -146,35 +161,37 @@
     <section class="examples">
         <div class="container">
             <div class="row py-xl-5">
-                <div class="col-md-12"><p class="text__h2">Примеры моих работ</p></div>
+                <div class="col-md-12"><h2 class="text__h2">Примеры моих работ</h2></div>
             </div>
             <!-- SlickPlugin start-->
             <div class="examples__slider slider">
                 <div class="carousel-item active col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="./img/example-1.png" alt="example-1"
+                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-1.png" alt="example-1"
                          style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4 px-0">Сайт психолога Веры Антоновой</div>
                 </div>
                 <div class="carousel-item col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="./img/example-2.png" alt="example-2"
+                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-2.png" alt="example-2"
                          style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4">Сайт магазина детской одежды</div>
                 </div>
                 <div class="carousel-item col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="./img/example-3.png" alt="example-3" style="width: 100%">
+                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-3.png" alt="example-3" style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4 px-0">Сайт магазина
                         &laquo;Рыболов&raquo;</div>
                 </div>
                 <div class="carousel-item col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="./img/example-4.png" alt="example-4" style="width: 100%">
+                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-4.png" alt="example-4" style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4 px-0">My next site</div>
                 </div>
             </div>
             <div class="arrows"></div>
         <!-- carousel stop -->
             <div class="examples__button row justify-content-center">
-                <div class="col-12">
-                    <button class="button button_full text__h6 text__h6-white">Заказать проект</button>
+                <div class="d-flex col-auto">
+                    <button type="button" class="button button_full text__h6 text__h6-white" data-modal="modal_2">
+                        Заказать проект
+                    </button>
                 </div>
             </div>
         </div>
@@ -184,9 +201,9 @@
         <div class="container price__container">
             <div class="row price__row">
                 <div class="col-12">
-                    <div class="text__h3">
+                    <h3 class="text__h3">
                         Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
-                    </div>
+                    </h3>
                 </div>
                 <div class="col-12">
                     <div class="price__text text__h6 text__h6-white">
@@ -197,9 +214,10 @@
         </div>
     </section>
     <section class="info">
+        <h2 style="visibility: hidden">Info</h2>
         <div class="container">
-            <div class="row justify-content-md-between justify-content-sm-center justify-content-left">
-                <div class="col-5 col-sm-4 col-md info__item align-self-start">
+            <div class="row justify-content-md-between justify-content-sm-center justify-content-left flex-nowrap">
+                <div class="col-5 col-sm-4 col-md-auto info__item align-self-start">
                     <div class="info__section">
                         <a href="#" class="text__h6 text__h6-grey">Услуги</a>
                     </div>
@@ -210,7 +228,7 @@
                         <a href="#" class="text__h6 text__h6-grey">Стоимость</a>
                     </div>
                 </div>
-                <div class="col-6 col-sm-5 col-md info__item align-self-sm-center align-self-md-start">
+                <div class="col-6 col-sm-5 col-md-auto info__item align-self-sm-center align-self-md-start">
                     <div class="text__h4 text__h4_reg-grey text-nowrap info__section">
                         <i class="fas fa-phone-alt info__contacts_icon"></i>+7(499) 995-77-55
                     </div>
@@ -218,8 +236,9 @@
                         <i class="fas fa-envelope info__contacts_icon"></i>info@agency.ru
                     </div>
                 </div>
-                <div class="col-md info__btn flex-column justify-content-center d-none d-md-block">
-                    <button class="button button_empty text__h6 text-nowrap text__h6-red">
+
+                <div class="col-md-auto info__btn d-none d-md-flex flex-md-column">
+                    <button type="button" class="button button_empty text__h6 text-nowrap text__h6-red" data-modal="modal_1">
                         Заказать звонок
                     </button>
                     <div class="row info__item_social justify-content-center">
@@ -238,11 +257,14 @@
                     </div>
                 </div>
             </div>
+
             <div class="row d-md-none justify-content-center">
-                <div class="col-12 col-sm-7 col-md info__btn flex-column text-center">
-                    <button class="button button_full text__h6 text-nowrap text__h6-white">
-                        Заказать звонок
-                    </button>
+                <div class="col-auto col-md info__btn flex-column text-center">
+                    <div class="row justify-content-center">
+                        <button type="button" class="button button_full text__h6 text-nowrap text__h6-white" data-modal="modal_1">
+                            Заказать звонок
+                        </button>
+                    </div>
                     <div class="row info__item_social justify-content-center">
                         <svg class="col-3 px-md-2 align-self-end">
                             <use xlink:href="sprite.svg#vk"></use>
@@ -259,6 +281,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <footer class="footer">
@@ -267,16 +290,85 @@
         </div>
     </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="slick-master/slick/slick.min.js"></script> <!--slick plugin-->
+    <div class="wrap">
+        <div class="overlay" data-close=""></div>
+
+        <div id="modal_1" class="dlg-modal">
+            <p class="closer" data-close=""></p>
+            <form action="callback.php" method="post" class="contact_form" name="contact_form">
+                <ul>
+                    <li>
+                        <p class="required_notification">* Denotes Required Field</p>
+                        <h3>Order callback</h3>
+                    </li>
+                    <li>
+                        <label for="name_1">Name:</label>
+                        <input type="text" id="name_1" name="name" placeholder="Вася Пупкин" required />
+                    </li>
+                    <li>
+                        <label for="phone_1">Your phone:</label>
+                        <input type="text" id="phone_1" name="phone" placeholder="phone format" required />
+                        <span class="form_hint">Proper format phone</span>
+                    </li>
+                    <li>
+                        <label for="message_1">Message:</label>
+                        <textarea id="message_1" name="message" cols="40" rows="6" required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Submit Form</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id="modal_2" class="dlg-modal">
+            <p class="closer" data-close=""></p>
+            <form action="callback.php" method="post" class="contact_form" name="contact_form">
+                <ul>
+                    <li>
+                        <p class="required_notification">* Denotes Required Field</p>
+                        <h3>Contact Us</h3>
+                    </li>
+                    <li>
+                        <label for="name_2">Name:</label>
+                        <input type="text" id="name_2" name="name" placeholder="Вася Пупкин" required />
+                    </li>
+                    <li>
+                        <label for="email_2">Email:</label>
+                        <input type="email" id="email_2" name="email" placeholder="email format" required />
+                        <span class="form_hint">Proper format email</span>
+                    </li>
+                    <li>
+                        <label for="website_2">Website:</label>
+                        <input type="text" id="website_2" name="website" placeholder="http://vasilipupkin.com" required
+                               pattern="(http|https)://.+" />
+                        <span class="form_hint">Proper format "http://address.com"</span>
+                    </li>
+                    <li>
+                        <label for="message_2">Message:</label>
+                        <textarea id="message_2" name="message" cols="40" rows="6" required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Submit Form</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+<script src="jquery-3.4.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="slick-master/slick/slick.min.js"></script> <!--slick plugin-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+</script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+</script>
+
+<script>let typeAnimate = 'fade';</script>
+<script src="popup/popup-css3.function.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

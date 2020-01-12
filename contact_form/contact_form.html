@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Contact Form</title>
+	<link rel="stylesheet" media="screen" href="contact_form.css">
+</head>
+<body>
+	<div class="container" id="contact_form-load">
+		<form class="contact_form" action="" method="post" name="contact_form">
+			<ul>
+				<li>
+					<h2>Contact Us</h2>
+					<span class="required_notification">* Denotes Required Field</span>
+				</li>
+				<li>
+					<label for="name">Name:</label>
+					<input type="text" name="name" placeholder="Вася Пупкин" required />
+				</li>
+				<li>
+					<label for="email">Email:</label>
+					<input type="email" name="email" placeholder="email format" required />
+					<span class="form_hint">Proper format email</span>
+				</li>
+				<li>
+					<label for="website">Website:</label>
+					<input type="text" name="website" placeholder="http://vasilipupkin.com" required pattern="(http|https)://.+" />
+					<span class="form_hint">Proper format "http://someaddress.com"</span>
+				</li>
+				<li>
+					<label for="message">Message:</label>
+					<textarea name="message" cols="40" rows="6" required></textarea>
+				</li>
+				<li>
+					<button class="submit" type="submit">Submit Form</button>
+				</li>
+			</ul>
+		</form>
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="contact_form.js"></script>
+
+</body>
+</html>
