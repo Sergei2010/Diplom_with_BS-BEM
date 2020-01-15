@@ -29,6 +29,72 @@
     <title>Diplom_with_BS+BEM</title>
 </head>
 <body>
+
+<!--modal_1 && modal_2-->
+<div class="wrap">
+    <div class="overlay" data-close=""></div>
+    <div id="modal_1" class="dlg-modal">
+        <p class="closer" data-close=""></p>
+        <form onsubmit="alert('submit!')" method="post" class="contact_form" name="contact_form">
+            <ul>
+                <li>
+                    <p class="required_notification">* Denotes Required Field</p>
+                    <h3>Order callback</h3>
+                </li>
+                <li>
+                    <label for="name_1">Name:</label>
+                    <input type="text" id="name_1" name="name" placeholder="Вася Пупкин" required />
+                </li>
+                <li>
+                    <label for="phone_1">Your phone:</label>
+                    <input type="text" id="phone_1" name="phone" placeholder="phone format" required />
+                    <span class="form_hint">Proper format phone</span>
+                </li>
+                <li>
+                    <label for="message_1">Message:</label>
+                    <textarea id="message_1" name="message" cols="40" rows="6" required></textarea>
+                </li>
+                <li>
+                    <button class="submit" type="submit">Submit Form</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div id="modal_2" class="dlg-modal">
+        <p class="closer" data-close=""></p>
+        <form onsubmit="alert('submit!')" method="post" class="contact_form" name="contact_form">
+            <ul>
+                <li>
+                    <p class="required_notification">* Denotes Required Field</p>
+                    <h3>Contact Us</h3>
+                </li>
+                <li>
+                    <label for="name_2">Name:</label>
+                    <input type="text" id="name_2" name="name" placeholder="Вася Пупкин" required />
+                </li>
+                <li>
+                    <label for="email_2">Email:</label>
+                    <input type="email" id="email_2" name="email" placeholder="email format" required />
+                    <span class="form_hint">Proper format email</span>
+                </li>
+                <li>
+                    <label for="website_2">Website:</label>
+                    <input type="text" id="website_2" name="website" placeholder="http://vasilipupkin.com" required
+                           pattern="(http|https)://.+" />
+                    <span class="form_hint">Proper format "http://address.com"</span>
+                </li>
+                <li>
+                    <label for="message_2">Message:</label>
+                    <textarea id="message_2" name="message" cols="40" rows="6" required></textarea>
+                </li>
+                <li>
+                    <button class="submit" type="submit">Submit Form</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
     <header class="menu-bar">
         <div class="container">
             <div class="row menu-bar__row">
@@ -44,7 +110,7 @@
                 <!-- добавляем гамбургер до размера xl и размещаем его в отдельный  script -->
                 <div class="d-flex d-xl-none col">
                     <button type="button" class="menu-bar__button text-center">
-                        <img src="diplom_with_BS+BE/img/svg/menu.svg" class="menu-bar__svg_menu" alt="menu">
+                        <img src="img/svg/menu.svg" class="menu-bar__svg_menu" alt="menu">
                     </button>
                 </div>
 
@@ -60,7 +126,7 @@
                 <div class="d-md-none col">
                     <div class="row justify-content-end">
                         <button type="button" class="button menu-bar__phone" data-modal="modal_1">
-                            <img src="diplom_with_BS+BE/img/svg/phone-circle.svg" class="menu-bar__svg_phone" alt="phone">
+                            <img src="img/svg/phone-circle.svg" class="menu-bar__svg_phone" alt="phone">
                         </button>
                     </div>
                 </div>
@@ -80,7 +146,7 @@
     <header class="header-mob d-flex d-md-none">
         <div class="container">
             <div class="header-mob__img">
-                <img src="diplom_with_BS+BE/img/bg-man-ellips.png" alt="man">
+                <img src="img/bg-man-ellips.png" alt="man">
             </div>
             <div class="header__text">
                 <div class="text__h1">Дмитрий Алексеев</div>
@@ -125,25 +191,25 @@
             <div class="row about__row_items justify-content-center">
                  <div class="col-xl-3 col-md-5 col-sm-6  about__link">
                      <a href="#">
-                         <img src="diplom_with_BS+BE/img/tools-and-utensils.png" class="about__img" alt="coding">
+                         <img src="img/tools-and-utensils.png" class="about__img" alt="coding">
                          <p class="text__h5">Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</p>
                      </a>
                  </div>
                 <div class="col-xl-3 col-md-5 col-sm-6 about__link">
                     <a href="#">
-                        <img src="diplom_with_BS+BE/img/responsive.png" class="about__img" alt="coding">
+                        <img src="img/responsive.png" class="about__img" alt="coding">
                         <p class="text__h5">Адаптивная вёрстка под все браузеры и&nbsp;устройства</p>
                     </a>
                 </div>
                 <div class="col-xl-3 col-md-5 col-sm-6 about__link">
                     <a href="#">
-                        <img src="diplom_with_BS+BE/img/programming.png" class="about__img" alt="coding">
+                        <img src="img/programming.png" class="about__img" alt="coding">
                         <p class="text__h5">Frontend&mdash;разработка и&nbsp;программирование</p>
                     </a>
                 </div>
                 <div class="col-xl-3 col-md-5 col-sm-6 about__link">
                     <a href="#">
-                        <img src="diplom_with_BS+BE/img/coding.png" class="about__img" alt="coding">
+                        <img src="img/coding.png" class="about__img" alt="coding">
                         <p class="text__h5">Исправление и&nbsp;доработка существующей вёрстки</p>
                     </a>
                 </div>
@@ -166,22 +232,22 @@
             <!-- SlickPlugin start-->
             <div class="examples__slider slider">
                 <div class="carousel-item active col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-1.png" alt="example-1"
+                    <img class="examples__img img-fluid px-md-2" src="img/example-1.png" alt="example-1"
                          style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4 px-0">Сайт психолога Веры Антоновой</div>
                 </div>
                 <div class="carousel-item col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-2.png" alt="example-2"
+                    <img class="examples__img img-fluid px-md-2" src="img/example-2.png" alt="example-2"
                          style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4">Сайт магазина детской одежды</div>
                 </div>
                 <div class="carousel-item col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-3.png" alt="example-3" style="width: 100%">
+                    <img class="examples__img img-fluid px-md-2" src="img/example-3.png" alt="example-3" style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4 px-0">Сайт магазина
                         &laquo;Рыболов&raquo;</div>
                 </div>
                 <div class="carousel-item col-12 px-sm-1">
-                    <img class="examples__img img-fluid px-md-2" src="diplom_with_BS+BE/img/example-4.png" alt="example-4" style="width: 100%">
+                    <img class="examples__img img-fluid px-md-2" src="img/example-4.png" alt="example-4" style="width: 100%">
                     <div class="text__h5 carousel-text text-center mt-4 px-0">My next site</div>
                 </div>
             </div>
@@ -289,71 +355,6 @@
             <div class="text__h6 text__h6-white col mx-auto text-center">© Дмитрий Алексеев, 2016 – 2019</div>
         </div>
     </footer>
-
-    <div class="wrap">
-        <div class="overlay" data-close=""></div>
-
-        <div id="modal_1" class="dlg-modal">
-            <p class="closer" data-close=""></p>
-            <form action="callback.php" method="post" class="contact_form" name="contact_form">
-                <ul>
-                    <li>
-                        <p class="required_notification">* Denotes Required Field</p>
-                        <h3>Order callback</h3>
-                    </li>
-                    <li>
-                        <label for="name_1">Name:</label>
-                        <input type="text" id="name_1" name="name" placeholder="Вася Пупкин" required />
-                    </li>
-                    <li>
-                        <label for="phone_1">Your phone:</label>
-                        <input type="text" id="phone_1" name="phone" placeholder="phone format" required />
-                        <span class="form_hint">Proper format phone</span>
-                    </li>
-                    <li>
-                        <label for="message_1">Message:</label>
-                        <textarea id="message_1" name="message" cols="40" rows="6" required></textarea>
-                    </li>
-                    <li>
-                        <button class="submit" type="submit">Submit Form</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-        <div id="modal_2" class="dlg-modal">
-            <p class="closer" data-close=""></p>
-            <form action="callback.php" method="post" class="contact_form" name="contact_form">
-                <ul>
-                    <li>
-                        <p class="required_notification">* Denotes Required Field</p>
-                        <h3>Contact Us</h3>
-                    </li>
-                    <li>
-                        <label for="name_2">Name:</label>
-                        <input type="text" id="name_2" name="name" placeholder="Вася Пупкин" required />
-                    </li>
-                    <li>
-                        <label for="email_2">Email:</label>
-                        <input type="email" id="email_2" name="email" placeholder="email format" required />
-                        <span class="form_hint">Proper format email</span>
-                    </li>
-                    <li>
-                        <label for="website_2">Website:</label>
-                        <input type="text" id="website_2" name="website" placeholder="http://vasilipupkin.com" required
-                               pattern="(http|https)://.+" />
-                        <span class="form_hint">Proper format "http://address.com"</span>
-                    </li>
-                    <li>
-                        <label for="message_2">Message:</label>
-                        <textarea id="message_2" name="message" cols="40" rows="6" required></textarea>
-                    </li>
-                    <li>
-                        <button class="submit" type="submit">Submit Form</button>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>
 
 <script src="jquery-3.4.1.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

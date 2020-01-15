@@ -1,13 +1,14 @@
 <?php
+    echo 'Мы подготовим необходимые данные и отправим на Ваш email';
     //Если поступили данные..
-    if ( isset($_POST['name'],$_POST['phone'])) {
+    /*if ( isset($_POST['name'],$_POST['phone'])) {
 
         $name = trim( htmlspecialchars( substr($_POST['name'], 0, 40) ) );
         $phone = trim( htmlspecialchars( substr($_POST['phone'], 0, 40) ) );
 
-        if ( $name !== '' && $phone !== '' ) {
+        if ( $name !== '' && $phone !== '' ) {*/
 
-            $email = 'sergejmatvejcuk323@gmail.com';
+            /*$email = 'sergejmatvejcuk323@gmail.com';
             $domen = 'http://klasnonabe.ru/Diplom_with_BS+BEM';
 
             $message = 'Имя: '.$name.'<br>Телефон: '.$phone;
@@ -15,10 +16,10 @@
             $headers .= 'From: ' .$domen. ' <robot@' .$domen.">\r\n";
             $subject = 'Обратный звонок';
             mail($email, $subject, $message, $headers);
-            echo 1;
-
+            echo 1;*/
+           /* echo 'Мы подготовим необходимые данные и отправим на Ваш email';
         }
     else {
-        echo 0;
+        echo 'Произошла непредвидимая ошибка! Попробуйте отправить ещё один запрос! ';
     }
-}
+}*/
