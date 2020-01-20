@@ -23,18 +23,19 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- favicon stop -->
-
+    <link href="popup/popup.style.correct.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="popup/popup.style.css" rel="stylesheet">
     <title>Diplom_with_BS+BEM</title>
 </head>
 <body>
 
 <!--modal_1 && modal_2-->
 <div class="wrap">
-    <div class="overlay" data-close=""></div>
+
+    <div class="overlay" data-close="" onclick=""></div>
+
     <div id="modal_1" class="dlg-modal">
-        <p class="closer" data-close=""></p>
+        <p class="closer" data-close="" onclick=""></p>
         <form onsubmit="alert('submit!')" method="post" class="contact_form" name="contact_form">
             <ul>
                 <li>
@@ -60,6 +61,7 @@
             </ul>
         </form>
     </div>
+
     <div id="modal_2" class="dlg-modal">
         <p class="closer" data-close=""></p>
         <form onsubmit="alert('submit!')" method="post" class="contact_form" name="contact_form">

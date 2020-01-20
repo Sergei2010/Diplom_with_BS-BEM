@@ -1,14 +1,13 @@
 ;(function() {
-	var overlay 	= document.getElementById('overlay'),
+	let overlay 	= document.getElementById('overlay'),
 		mOpen		= document.querySelectorAll('[data-modal]'),
 		mClose		= document.querySelectorAll('[data-close]'),
 		outer		= document.querySelector('.modal-outer'),
 		modals		= document.querySelectorAll('.modal-outer > div'),
 		duration	= 400,
-		mStatus		= false,
-		h 			= null;
+		mStatus		= false;
 
-	if (mOpen.length == 0) return;
+	if (mOpen.length === 0) return;
 
 	setTopOuter();
 
@@ -17,8 +16,8 @@
 	}
 
 	[].forEach.call(mOpen, function(el) {
-		el.addEventListener('click', function(e) {
-			var modalId	= el.getAttribute('data-modal'),
+		el.addEventListener('click', function() {
+			let modalId	= el.getAttribute('data-modal'),
 				modal	= document.getElementById(modalId);
 			modalShow(modal);
 		});
@@ -36,13 +35,13 @@
 		overlay.classList.add('fadeIn');
 		modal.style.display = 'block';
 
-		var start		= new Date().getTime(),
+		let start		= new Date().getTime(),
 			startTop	= outer.getBoundingClientRect().top,
 			finalTop	= (window.innerHeight - outer.offsetHeight) / 2,
 			offset		= outer.offsetHeight + finalTop;
 
-		var fn = function() {
-			var now		= new Date().getTime() - start,
+		let fn = function() {
+			let now		= new Date().getTime() - start,
 				currTop	= Math.round(startTop + offset * now / duration);
 
 			currTop = (currTop > finalTop) ? finalTop : currTop;
@@ -51,7 +50,7 @@
 			if (currTop < finalTop) {
 				requestAnimationFrame(fn);
 			}
-		}
+		};
 		requestAnimationFrame(fn);
 		window.addEventListener('resize', setTopOpenOuter);
 	}
@@ -60,14 +59,14 @@
 		if (mStatus && ( !event.keyCode || event.keyCode === 27 ) ) {
 			mStatus = false;
 
-			var start		= new Date().getTime(),
+			let start		= new Date().getTime(),
 				startTop	= outer.getBoundingClientRect().top,
 				finalTop	= -outer.offsetHeight,
 				offset		= outer.offsetHeight + (window.innerHeight - outer.offsetHeight) / 2;
 
-			var fn = function() {
-				var now		= new Date().getTime() - start,
-					currTop	= Math.round(startTop - offset * now / duration);
+			let fn = function() {
+				let now = new Date().getTime() - start,
+					currTop = Math.round(startTop - offset * now / duration);
 
 				currTop = (currTop < finalTop) ? finalTop : currTop;
 				outer.style.top = currTop + 'px';
@@ -77,11 +76,11 @@
 				} else {
 					overlay.classList.remove('fadeIn');
 					overlay.classList.add('fadeOut');
-					[].forEach.call(modals, function(modal){
+					[].forEach.call(modals, function (modal) {
 						modal.removeAttribute('style');
 					});
 				}
-			}
+			};
 			requestAnimationFrame(fn);
 			window.removeEventListener('resize', setTopOpenOuter);
 		}
