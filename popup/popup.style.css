@@ -55,7 +55,6 @@
     }
 }
 .fadeIn {
-    -webkit-animation-name: fadeIn;
     animation-name : fadeIn;
     opacity : 1.0;
     visibility : visible;
@@ -71,7 +70,6 @@
     }
 }
 .fadeOut {
-    -webkit-animation-name: fadeOut;
     animation-name : fadeOut;
     opacity : 0;
     visibility : hidden;

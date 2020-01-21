@@ -30,12 +30,6 @@ body {
     max-width: 1420px;
     min-width: 320px;
 }
-a, label {
-    -webkit-tap-highlight-color: transparent;
-}
-input[type=text], input[type=submit], textarea {
-    -webkit-appearance: none;
-}
 ul, li {
     display: block;
     padding: 0;
@@ -139,17 +133,13 @@ ul, li {
     padding: 10px 20px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     background: #f8eeee;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     position: absolute;
     height: min-content;
 }
     .menu-bar__list:hover {
-        -webkit-transform: rotate(-1deg);
         transform: rotate(-1deg);
-        -webkit-transition: 0.3s;
         transition: 0.3s;
-        -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
     }
 
@@ -171,9 +161,6 @@ ul, li {
         url("../img/svg/copy-back.svg") no-repeat 40% 60%;
         background-size: 12%, 12%, 12%, 12%, 12%;
         animation: animeBgOne 20s ease infinite;
-        -moz-animation: animeBgOne 20s ease infinite;
-        -webkit-animation: animeBgOne 20s ease infinite;
-        -o-animation: animeBgOne 20s ease infinite;
     }
     @-webkit-keyframes animeBgOne {
         50% {
@@ -188,7 +175,6 @@ ul, li {
 
 /* buttons */
 .button {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -249,23 +235,16 @@ button:focus {
         background: #f8eeee;
     }
     .about__link:hover:nth-child(odd) {
-        -webkit-transform: rotate(-1deg);
         transform: rotate(-1deg);
-        -webkit-transition: 0.3s;
         transition: 0.3s;
-        -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
     }
     .about__link:hover:nth-child(even) {
-        -webkit-transform: rotate(1deg);
         transform: rotate(1deg);
-        -webkit-transition: 0.3s;
         transition: 0.3s;
-        -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
     }
     .about__link:hover .about__img {
-        -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
 
@@ -301,12 +280,10 @@ button:focus {
     }
     .slick-dots li button:before {
         opacity: .1;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
         color: red;
     }
     .slick-dots li.slick-active button:before {
         opacity: .75;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
         color: #de4f33;
     }
     .arrows {
@@ -331,7 +308,6 @@ button:focus {
 .price {
     margin-top: 100px;
     padding: 80px 0;
-    background: -webkit-linear-gradient(13deg, #e58d5e, #dc3292);
     background: linear-gradient(77deg, #e58d5e, #dc3292);
 
 }
@@ -347,9 +323,6 @@ button:focus {
         url("../img/svg/braces-back-white.svg") no-repeat 90% 90%;
         background-size: 11%, 10%, 11%, 10%, 10%;
         animation: animeBgTwo 20s ease infinite;
-        -moz-animation: animeBgTwo 20s ease infinite;
-        -webkit-animation: animeBgTwo 20s ease infinite;
-        -o-animation: animeBgTwo 20s ease infinite;
     }
     @-webkit-keyframes animeBgTwo {
         50% {
@@ -465,9 +438,6 @@ button:focus {
         url("../img/svg/copy-back.svg") no-repeat 30% 48%;
         background-size: 22%, 22%, 22%, 22%, 22%;
         animation: animeBgOne 20s ease infinite;
-        -moz-animation: animeBgOne 20s ease infinite;
-        -webkit-animation: animeBgOne 20s ease infinite;
-        -o-animation: animeBgOne 20s ease infinite;
     }
 
     @-webkit-keyframes animeBgOne {
@@ -490,9 +460,6 @@ button:focus {
         url("../img/svg/braces-back-white.svg") no-repeat 100% 70%;
         background-size: 20%, 20%, 20%, 18%, 20%;
         animation: animeBgTwo 20s ease infinite;
-        -moz-animation: animeBgTwo 20s ease infinite;
-        -webkit-animation: animeBgTwo 20s ease infinite;
-        -o-animation: animeBgTwo 20s ease infinite;
     }
     @-webkit-keyframes animeBgTwo {
         50% {
@@ -559,9 +526,6 @@ button:focus {
         url("../img/svg/div.svg") no-repeat 90% 0;
         background-size: 22%, 22%, 22%, 22%, 22%;
         animation: animeBgOne 20s ease infinite;
-        -moz-animation: animeBgOne 20s ease infinite;
-        -webkit-animation: animeBgOne 20s ease infinite;
-        -o-animation: animeBgOne 20s ease infinite;
     }
     @-webkit-keyframes animeBgOne {
         50% {
@@ -661,9 +625,6 @@ button:focus {
         url("../img/svg/braces-back-white.svg") no-repeat 100% 67%;
         background-size: 16%, 16%, 16%, 12%, 16%;
         animation: animeBgTwo 20s ease infinite;
-        -moz-animation: animeBgTwo 20s ease infinite;
-        -webkit-animation: animeBgTwo 20s ease infinite;
-        -o-animation: animeBgTwo 20s ease infinite;
     }
     @-webkit-keyframes animeBgTwo {
         50% {
@@ -742,9 +703,6 @@ button:focus {
         url("../img/svg/div.svg") no-repeat 90% 0;
         background-size: 22%, 22%, 22%, 22%, 22%;
         animation: animeBgOne 20s ease infinite;
-        -moz-animation: animeBgOne 20s ease infinite;
-        -webkit-animation: animeBgOne 20s ease infinite;
-        -o-animation: animeBgOne 20s ease infinite;
     }
     @-webkit-keyframes animeBgOne {
         50% {
@@ -859,9 +817,6 @@ button:focus {
         url("../img/svg/braces-back-white.svg") no-repeat 100% 62%;
         background-size: 16%, 16%, 16%, 12%, 16%;
         animation: animeBgTwo 20s ease infinite;
-        -moz-animation: animeBgTwo 20s ease infinite;
-        -webkit-animation: animeBgTwo 20s ease infinite;
-        -o-animation: animeBgTwo 20s ease infinite;
     }
     @-webkit-keyframes animeBgTwo {
         50% {
