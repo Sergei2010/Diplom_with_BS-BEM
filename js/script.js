@@ -54,11 +54,12 @@ $(function () {
 
     /* change arrows next and prev with mouseover and mouseout */
     $('#next').on('mouseover', function () {
-        $('#next-img').attr('src', './img/arrow-right-active.png')
+        $('#next-img').attr('src', './img/arrow-right-active.png');
     })
     .on('mouseout', function () {
         $('#next-img').attr('src', './img/arrow-right.png');
     });
+
     $('#prev').on('mouseover', function () {
         $('#prev-img').attr('src', './img/arrow-left-active.png');
     })
@@ -96,8 +97,6 @@ $(function () {
         $('.menu-bar__div-empty').toggle();
     });
 
-
-    /*contact_form*/
 
 });
 
